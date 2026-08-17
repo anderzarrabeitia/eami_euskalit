@@ -1,0 +1,520 @@
+{
+  "logistica": {
+    "zones": [
+      {
+        "id": "l1",
+        "lbl": "El Ave María · Instalaciones",
+        "icon": "ri-building-2-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Ficha del centro",
+            "i": "ri-file-text-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Plano del edificio",
+            "i": "ri-map-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Fotos instalaciones",
+            "i": "ri-image-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Historia del centro",
+            "i": "ri-book-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "l2",
+        "lbl": "Cómo llegar",
+        "icon": "ri-map-pin-2-fill",
+        "col": "zg",
+        "tiles": [
+          {
+            "l": "Mapa de acceso",
+            "i": "ri-map-2-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Transporte público",
+            "i": "ri-bus-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Aparcamiento",
+            "i": "ri-parking-fill",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Indicaciones a pie",
+            "i": "ri-walk-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "l3",
+        "lbl": "Organigrama y personas",
+        "icon": "ri-organization-chart",
+        "col": "zp",
+        "tiles": [
+          {
+            "l": "Organigrama",
+            "i": "ri-mind-map",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Equipo directivo",
+            "i": "ri-vip-crown-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Responsables proceso",
+            "i": "ri-user-star-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Relación personal",
+            "i": "ri-contacts-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "l4",
+        "lbl": "Servicio",
+        "icon": "ri-school-fill",
+        "col": "za",
+        "tiles": [
+          {
+            "l": "Oferta educativa",
+            "i": "ri-book-open-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Horarios",
+            "i": "ri-calendar-event-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Servicios complementarios",
+            "i": "ri-tools-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Proyecto trilingüe",
+            "i": "ri-global-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "l5",
+        "lbl": "Web y RRSS",
+        "icon": "ri-global-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Web del centro",
+            "i": "ri-global-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Instagram",
+            "i": "ri-instagram-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Facebook",
+            "i": "ri-facebook-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Correo contacto",
+            "i": "ri-mail-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      }
+    ]
+  },
+  "reunion": {
+    "zones": [
+      {
+        "id": "r1",
+        "lbl": "Documentos del equipo evaluador",
+        "icon": "ri-group-fill",
+        "col": "zg",
+        "tiles": [
+          {
+            "l": "Convocatoria reunión",
+            "i": "ri-calendar-event-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Protocolo evaluación",
+            "i": "ri-file-list-3-fill",
+            "t": "pdf",
+            "c": ""
+          },
+          {
+            "l": "Criterios EUSKALIT",
+            "i": "ri-checkbox-multiple-fill",
+            "t": "pdf",
+            "c": ""
+          },
+          {
+            "l": "Agenda de la visita",
+            "i": "ri-list-check-3",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "r2",
+        "lbl": "Documentación de la organización",
+        "icon": "ri-building-2-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Presentación del centro",
+            "i": "ri-slideshow-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Memoria de gestión",
+            "i": "ri-article-fill",
+            "t": "pdf",
+            "c": ""
+          },
+          {
+            "l": "Mapa de procesos",
+            "i": "ri-mind-map",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Plan estratégico 2024-28",
+            "i": "ri-focus-3-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      }
+    ]
+  },
+  "visitas": {
+    "zones": [
+      {
+        "id": "v1",
+        "lbl": "Visita 1 · 3 de noviembre",
+        "icon": "ri-calendar-event-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Programa del día",
+            "i": "ri-list-check-3",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Entrevistas previstas",
+            "i": "ri-group-fill",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Documentos de apoyo",
+            "i": "ri-files-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Notas de sesión",
+            "i": "ri-draft-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "v2",
+        "lbl": "Visita 2 · 4 de noviembre",
+        "icon": "ri-calendar-event-fill",
+        "col": "zg",
+        "tiles": [
+          {
+            "l": "Programa del día",
+            "i": "ri-list-check-3",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Entrevistas previstas",
+            "i": "ri-group-fill",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Documentos de apoyo",
+            "i": "ri-files-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Notas de sesión",
+            "i": "ri-draft-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "v3",
+        "lbl": "Visita 3 · 10 de noviembre",
+        "icon": "ri-calendar-event-fill",
+        "col": "za",
+        "tiles": [
+          {
+            "l": "Programa del día",
+            "i": "ri-list-check-3",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Entrevistas previstas",
+            "i": "ri-group-fill",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Documentos de apoyo",
+            "i": "ri-files-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Notas de sesión",
+            "i": "ri-draft-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      }
+    ]
+  },
+  "docs": {
+    "zones": [
+      {
+        "id": "d1",
+        "lbl": "Documentación general",
+        "icon": "ri-folder-3-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Memoria completa",
+            "i": "ri-article-fill",
+            "t": "pdf",
+            "c": ""
+          },
+          {
+            "l": "Datos del centro",
+            "i": "ri-file-text-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Autoevaluación",
+            "i": "ri-checkbox-multiple-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d2",
+        "lbl": "Estrategia",
+        "icon": "ri-focus-3-fill",
+        "col": "zp",
+        "tiles": [
+          {
+            "l": "Plan estratégico",
+            "i": "ri-focus-3-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Líneas estratégicas",
+            "i": "ri-list-check-3",
+            "t": "txt",
+            "c": ""
+          },
+          {
+            "l": "Seguimiento 2024-28",
+            "i": "ri-bar-chart-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d3",
+        "lbl": "Clientes",
+        "icon": "ri-heart-fill",
+        "col": "zr",
+        "tiles": [
+          {
+            "l": "Satisfacción familias",
+            "i": "ri-heart-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Encuestas alumnado",
+            "i": "ri-bar-chart-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Gestión de quejas",
+            "i": "ri-file-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d4",
+        "lbl": "Personas",
+        "icon": "ri-group-fill",
+        "col": "zg",
+        "tiles": [
+          {
+            "l": "Bienestar equipo",
+            "i": "ri-group-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Formación continua",
+            "i": "ri-award-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Evaluación desempeño",
+            "i": "ri-star-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d5",
+        "lbl": "Sociedad",
+        "icon": "ri-global-fill",
+        "col": "za",
+        "tiles": [
+          {
+            "l": "SROI",
+            "i": "ri-bar-chart-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Proyectos comunidad",
+            "i": "ri-global-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Sostenibilidad",
+            "i": "ri-flag-fill",
+            "t": "txt",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d6",
+        "lbl": "Innovación",
+        "icon": "ri-lightbulb-flash-fill",
+        "col": "zb",
+        "tiles": [
+          {
+            "l": "Proyectos innovación",
+            "i": "ri-lightbulb-flash-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Apps pedagógicas",
+            "i": "ri-smartphone-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Robótica educativa",
+            "i": "ri-robot-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      },
+      {
+        "id": "d7",
+        "lbl": "Indicadores",
+        "icon": "ri-bar-chart-fill",
+        "col": "zp",
+        "tiles": [
+          {
+            "l": "Cuadro de mando",
+            "i": "ri-bar-chart-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "KPIs clave",
+            "i": "ri-focus-3-fill",
+            "t": "web",
+            "c": ""
+          },
+          {
+            "l": "Evolución resultados",
+            "i": "ri-pie-chart-fill",
+            "t": "web",
+            "c": ""
+          }
+        ]
+      }
+    ]
+  }
+}
