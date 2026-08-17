@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Ave María Ikastetxea — EUSKALIT 2026</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --b1:#1A4A8A;--b2:#2E6DB4;--b4:#EEF5FC;
+  --cr:#F8FAFD;--cr2:#F5F0E8;--cr3:#EDE6D8;--cr4:#D8CEB8;
+  --gd:#C8A030;
+  --gn:#2A6B3C;--gnl:#EAF4EE;
+  --am:#9A7B20;--aml:#FBF5E4;
+  --pu:#5A3A8A;--pul:#F0EAF8;
+  --rd:#B03020;--rdl:#F5DDD8;
+  --tx:#1A2A3A;--tx2:#4A5A6A;--tx3:#8A9AA8;
+  --tweb:#1A4A8A;--twebb:#D6E6F7;
+  --ttxt:#2A6B3C;--ttxtb:#D8EEE0;
+  --timg:#9A7B20;--timgb:#F5EDD0;
+  --tpdf:#B03020;--tpdfb:#F5DDD8;
+}
+html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background:var(--cr);color:var(--tx)}
+
+/* TOPBAR */
+.topbar{background:var(--b1);padding:9px 14px;display:flex;align-items:center;gap:9px;position:sticky;top:0;z-index:100}
+.logo-l6{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-l6-text .ln1{font-size:15px;font-weight:800;color:#fff;letter-spacing:.3px;line-height:1.1}
+.logo-l6-text .ln2{font-size:8px;font-weight:600;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+.logo-l6-text .ln3{height:1.5px;background:var(--gd);margin-top:4px;border-radius:2px}
+.tb-spacer{flex:1}
+
+/* lang switcher */
+.lang-sw{display:flex;border-radius:7px;overflow:hidden;border:1px solid rgba(255,255,255,.3);flex-shrink:0}
+.lang-btn{padding:4px 9px;font-size:11px;font-weight:700;cursor:pointer;color:rgba(255,255,255,.6);background:transparent;border:none;transition:all .15s}
+.lang-btn.active{background:rgba(255,255,255,.2);color:#fff}
+
+.tb-btns{display:flex;gap:6px;align-items:center}
+.btn-tb{display:none;align-items:center;gap:5px;border-radius:7px;padding:5px 10px;font-size:11px;font-weight:700;cursor:pointer;border:1px solid rgba(255,255,255,.25);white-space:nowrap;transition:all .15s}
+.btn-tb.visible{display:flex}
+.btn-home{background:rgba(255,255,255,.15);color:#fff}
+.btn-home:hover{background:rgba(255,255,255,.25)}
+.btn-edit-idle{background:rgba(255,255,255,.15);color:#fff}
+.btn-edit-idle:hover{background:rgba(255,255,255,.25)}
+.btn-edit-on{background:var(--gd);color:#fff;border-color:var(--gd)}
+.edit-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:none;flex-shrink:0}
+.edit-dot.show{display:block}
+
+/* OVERLAY de acceso */
+.access-overlay{position:fixed;inset:0;background:var(--b1);display:flex;align-items:center;justify-content:center;z-index:20000;padding:20px}
+.access-box{background:#fff;border-radius:18px;padding:32px 24px;width:100%;max-width:320px;display:flex;flex-direction:column;align-items:center;gap:16px;box-shadow:0 12px 48px rgba(0,0,0,.3)}
+.access-logo{margin-bottom:4px}
+.access-box h2{font-size:16px;font-weight:700;color:var(--b1);text-align:center;line-height:1.4}
+.access-box p{font-size:11px;color:var(--tx2);text-align:center;line-height:1.5}
+.access-box input{width:100%;font-size:14px;border:1.5px solid var(--cr4);border-radius:9px;padding:10px 14px;background:var(--cr2);color:var(--tx);outline:none;text-align:center;letter-spacing:3px}
+.access-box input:focus{border-color:var(--b1);background:#fff}
+.access-err{font-size:11px;color:var(--rd);font-weight:600;display:none;text-align:center}
+.access-err.show{display:block}
+.access-btn{width:100%;padding:11px;background:var(--b1);color:#fff;border:none;border-radius:9px;font-size:13px;font-weight:700;cursor:pointer}
+.access-btn:hover{background:var(--b2)}
+
+/* SCREENS */
+.screen{display:none}.screen.active{display:block}
+
+/* HOME */
+.home-intro{padding:13px 15px 9px;font-size:11px;color:var(--tx2);line-height:1.6;border-bottom:.5px solid var(--cr3)}
+.home-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:11px 11px 14px}
+.hcard{background:var(--cr2);border-radius:12px;padding:13px 12px 11px;cursor:pointer;border:.5px solid var(--cr4);transition:all .15s;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:6px}
+.hcard:hover{border-color:var(--b2);background:#EDE8DF}
+.hcard-top{display:flex;align-items:flex-start;justify-content:space-between}
+.hcard-ico{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hcard-ico i{font-size:22px}
+.hcard-arr{width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hcard-arr i{font-size:13px;color:#fff}
+.hcard h3{font-size:12px;font-weight:700;color:var(--tx)}
+.hcard p{font-size:10px;color:var(--tx2);line-height:1.4}
+.hcard-num{position:absolute;bottom:-10px;right:7px;font-size:58px;font-weight:900;font-family:Georgia,serif;opacity:.06;line-height:1;pointer-events:none;color:var(--b1)}
+.hc1 .hcard-ico{background:var(--b4)} .hc1 .hcard-ico i{color:var(--b1)} .hc1 .hcard-arr{background:var(--b1)}
+.hc2 .hcard-ico{background:var(--gnl)} .hc2 .hcard-ico i{color:var(--gn)} .hc2 .hcard-arr{background:var(--gn)}
+.hc3 .hcard-ico{background:var(--aml)} .hc3 .hcard-ico i{color:var(--am)} .hc3 .hcard-arr{background:var(--am)}
+.hc4 .hcard-ico{background:var(--pul)} .hc4 .hcard-ico i{color:var(--pu)} .hc4 .hcard-arr{background:var(--pu)}
+
+/* SECT */
+.sect-hdr{padding:11px 15px 9px;border-bottom:.5px solid var(--cr3)}
+.sect-hdr h2{font-size:14px;font-weight:700;color:var(--b1)}
+.sect-hdr p{font-size:10px;color:var(--tx2);margin-top:2px}
+
+/* ZONES */
+.zone{margin:8px 10px 0;border-radius:10px;overflow:hidden;border:.5px solid var(--cr3)}
+.zone:last-child{margin-bottom:14px}
+.zone-hdr{padding:8px 12px;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;background:#fff}
+.zh-ico{font-size:16px}
+.zone-hdr span{font-size:11px;font-weight:700;flex:1}
+.zh-ch{font-size:13px;color:var(--tx3);transition:transform .2s}
+.zh-ch.open{transform:rotate(180deg)}
+.zone-body{display:none;background:var(--cr);padding:7px 7px 8px;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:6px}
+.zone-body.open{display:grid}
+.zb .zone-hdr{border-left:3px solid var(--b1)} .zb .zh-ico{color:var(--b1)} .zb .zone-hdr span{color:var(--b1)}
+.zg .zone-hdr{border-left:3px solid var(--gn)} .zg .zh-ico{color:var(--gn)} .zg .zone-hdr span{color:var(--gn)}
+.za .zone-hdr{border-left:3px solid var(--am)} .za .zh-ico{color:var(--am)} .za .zone-hdr span{color:var(--am)}
+.zp .zone-hdr{border-left:3px solid var(--pu)} .zp .zh-ico{color:var(--pu)} .zp .zone-hdr span{color:var(--pu)}
+.zr .zone-hdr{border-left:3px solid var(--rd)} .zr .zh-ico{color:var(--rd)} .zr .zone-hdr span{color:var(--rd)}
+
+/* TILES */
+.tile{border-radius:9px;padding:9px 5px 7px;display:flex;flex-direction:column;align-items:center;gap:5px;background:#fff;cursor:pointer;border:.5px solid var(--cr3);transition:all .12s;min-height:76px;position:relative;text-align:center}
+.ti-ico{width:32px;height:32px;border-radius:8px;background:#F0F0F0;display:flex;align-items:center;justify-content:center;font-size:18px;color:#999;flex-shrink:0}
+.ti-lbl{font-size:9px;color:var(--tx2);line-height:1.3;word-break:break-word}
+.ti-pen{position:absolute;top:3px;right:3px;width:16px;height:16px;display:none;align-items:center;justify-content:center;border-radius:4px;background:#F0F0F0}
+.edit-mode .tile:hover .ti-pen{display:flex}
+.ti-pen i{font-size:10px;color:var(--tx2)}
+.tile.filled .ti-lbl{font-weight:600}
+.ti-badge{position:absolute;bottom:4px;right:4px;font-size:7px;font-weight:800;padding:1px 4px;border-radius:3px;letter-spacing:.3px;line-height:1.4;text-transform:uppercase}
+.badge-web{background:var(--twebb);color:var(--tweb)}
+.badge-txt{background:var(--ttxtb);color:var(--ttxt)}
+.badge-img{background:var(--timgb);color:var(--timg)}
+.badge-pdf{background:var(--tpdfb);color:var(--tpdf)}
+.zb .tile:hover{background:var(--b4);border-color:var(--b2)} .zb .tile.filled{border-color:var(--b1)} .zb .tile.filled .ti-ico{background:var(--b4);color:var(--b1)} .zb .tile.filled .ti-lbl{color:var(--b1)}
+.zg .tile:hover{background:var(--gnl);border-color:var(--gn)} .zg .tile.filled{border-color:var(--gn)} .zg .tile.filled .ti-ico{background:var(--gnl);color:var(--gn)} .zg .tile.filled .ti-lbl{color:var(--gn)}
+.za .tile:hover{background:var(--aml);border-color:var(--am)} .za .tile.filled{border-color:var(--am)} .za .tile.filled .ti-ico{background:var(--aml);color:var(--am)} .za .tile.filled .ti-lbl{color:var(--am)}
+.zp .tile:hover{background:var(--pul);border-color:var(--pu)} .zp .tile.filled{border-color:var(--pu)} .zp .tile.filled .ti-ico{background:var(--pul);color:var(--pu)} .zp .tile.filled .ti-lbl{color:var(--pu)}
+.zr .tile:hover{background:var(--rdl);border-color:var(--rd)} .zr .tile.filled{border-color:var(--rd)} .zr .tile.filled .ti-ico{background:var(--rdl);color:var(--rd)} .zr .tile.filled .ti-lbl{color:var(--rd)}
+.add-tile{border-radius:9px;padding:9px 5px 7px;display:none;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:transparent;cursor:pointer;border:.5px dashed var(--cr4);min-height:76px;transition:all .12s}
+.edit-mode .add-tile{display:flex}
+.add-tile:hover{background:var(--b4);border-color:var(--b2)}
+.add-tile i{font-size:18px;color:var(--tx3)}
+.add-tile span{font-size:9px;color:var(--tx3)}
+
+/* MODAL */
+.mbg{position:fixed;inset:0;background:rgba(10,20,40,.55);display:flex;align-items:center;justify-content:center;z-index:9999;padding:10px}
+.modal{background:#fff;border-radius:14px;width:100%;max-width:340px;height:480px;display:flex;flex-direction:column;box-shadow:0 8px 32px rgba(0,0,0,.25);overflow:hidden}
+.m-head{padding:11px 14px 9px;border-bottom:.5px solid var(--cr3);flex-shrink:0}
+.m-title{font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px}
+.m-body{flex:1;overflow-y:auto;padding:9px 14px;display:flex;flex-direction:column;gap:8px;-webkit-overflow-scrolling:touch}
+.m-foot{padding:8px 14px;border-top:1px solid var(--cr3);background:#fff;flex-shrink:0;display:flex;gap:7px;align-items:center}
+.fld label{font-size:9px;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.6px;display:block;margin-bottom:3px}
+.fld input,.fld textarea{width:100%;font-size:12px;border:1px solid var(--cr4);border-radius:7px;padding:6px 9px;background:var(--cr2);color:var(--tx);outline:none;font-family:inherit}
+.fld input:focus,.fld textarea:focus{border-color:var(--b2);background:#fff}
+.fld textarea{resize:vertical;min-height:58px;line-height:1.5}
+
+/* bilingual field group */
+.bi-group{display:flex;flex-direction:column;gap:5px;background:var(--cr2);border-radius:9px;padding:8px 9px;border:.5px solid var(--cr4)}
+.bi-row{display:flex;align-items:flex-start;gap:6px}
+.bi-flag{font-size:12px;padding-top:6px;flex-shrink:0;width:20px;text-align:center}
+.bi-row input,.bi-row textarea{flex:1;font-size:12px;border:1px solid var(--cr4);border-radius:6px;padding:6px 8px;background:#fff;color:var(--tx);outline:none;font-family:inherit}
+.bi-row input:focus,.bi-row textarea:focus{border-color:var(--b2)}
+.bi-row textarea{resize:vertical;min-height:52px;line-height:1.5}
+
+.type-pills{display:flex;gap:5px}
+.tpill{flex:1;padding:5px 2px;border-radius:7px;border:1.5px solid var(--cr4);background:var(--cr2);font-size:9px;font-weight:700;cursor:pointer;text-align:center;color:var(--tx2);transition:all .12s;line-height:1.3}
+.tpill.sel-web{background:var(--twebb);border-color:var(--tweb);color:var(--tweb)}
+.tpill.sel-txt{background:var(--ttxtb);border-color:var(--ttxt);color:var(--ttxt)}
+.tpill.sel-img{background:var(--timgb);border-color:var(--timg);color:var(--timg)}
+.tpill.sel-pdf{background:var(--tpdfb);border-color:var(--tpdf);color:var(--tpdf)}
+.ipick-lbl{font-size:9px;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.igrid{display:grid;grid-template-columns:repeat(8,1fr);gap:2px;height:84px;overflow-y:auto;padding:3px;background:var(--cr2);border-radius:7px;border:1px solid var(--cr4)}
+.iopt{width:26px;height:26px;border-radius:5px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:1.5px solid transparent}
+.iopt i{font-size:14px;color:var(--tx2)}
+.iopt:hover{background:var(--b4);border-color:var(--b2)}
+.iopt.sel{background:var(--b1);border-color:var(--b1)}
+.iopt.sel i{color:#fff}
+.del-box{background:var(--rdl);border:1px solid #e0a090;border-radius:8px;padding:8px 10px;display:none;flex-direction:column;gap:6px}
+.del-box.show{display:flex}
+.del-box p{font-size:11px;color:var(--rd);font-weight:600;text-align:center}
+.del-box-btns{display:flex;gap:7px}
+.del-box-btns button{flex:1;font-size:11px;font-weight:700;padding:7px;border-radius:7px;cursor:pointer;border:none}
+.dbyes{background:var(--rd);color:#fff}
+.dbno{background:#fff;color:var(--tx2);border:1px solid var(--cr4)}
+.mbtn{font-size:11px;font-weight:700;padding:8px 12px;border-radius:8px;cursor:pointer;border:none;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.mbp{color:#fff;flex:1;justify-content:center}
+.mbp:hover{filter:brightness(1.1)}
+.mbs{background:var(--cr2);color:var(--tx2);border:1px solid var(--cr4)}
+.mbs:hover{background:var(--cr3)}
+.mbd{background:var(--rdl);color:var(--rd);border:1px solid #e0a090}
+.mbd:hover{background:#f0c0b0}
+
+/* pw modal */
+.pw-bg{position:fixed;inset:0;background:rgba(10,20,40,.6);display:flex;align-items:center;justify-content:center;z-index:10000;padding:16px}
+.pw-box{background:#fff;border-radius:14px;padding:24px 20px;width:100%;max-width:280px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 32px rgba(0,0,0,.25);text-align:center}
+.pw-box h2{font-size:14px;font-weight:700;color:var(--b1)}
+.pw-box p{font-size:11px;color:var(--tx2);line-height:1.5}
+.pw-box input{width:100%;font-size:14px;border:1px solid var(--cr4);border-radius:8px;padding:9px 12px;background:var(--cr2);color:var(--tx);outline:none;text-align:center;letter-spacing:2px}
+.pw-box input:focus{border-color:var(--b1);background:#fff}
+.pw-err{font-size:11px;color:var(--rd);font-weight:600;display:none}
+.pw-err.show{display:block}
+.pw-btns{display:flex;gap:8px}
+.pw-btns button{flex:1;font-size:12px;font-weight:700;padding:9px;border-radius:8px;cursor:pointer;border:none}
+.pw-ok{background:var(--b1);color:#fff}
+.pw-ok:hover{background:var(--b2)}
+.pw-cancel{background:var(--cr2);color:var(--tx2);border:1px solid var(--cr4)}
+
+/* save floating */
+.btn-save-global{position:fixed;bottom:18px;right:18px;background:var(--gd);color:#fff;border:none;border-radius:12px;padding:11px 18px;font-size:13px;font-weight:700;cursor:pointer;display:none;align-items:center;gap:7px;box-shadow:0 4px 16px rgba(0,0,0,.2);z-index:500}
+.btn-save-global.show{display:flex}
+.btn-save-global:hover{filter:brightness(1.1)}
+.btn-save-global.saving{background:var(--tx3);pointer-events:none}
+
+/* POPUP VISOR */
+.popup-bg{position:fixed;inset:0;background:rgba(10,20,40,.6);display:flex;align-items:center;justify-content:center;z-index:9999;padding:12px}
+.popup{background:#fff;border-radius:14px;width:100%;max-width:520px;max-height:88vh;display:flex;flex-direction:column;box-shadow:0 8px 40px rgba(0,0,0,.3);overflow:hidden}
+.popup-hdr{padding:12px 14px;border-bottom:.5px solid var(--cr3);display:flex;align-items:center;gap:8px;flex-shrink:0}
+.popup-hdr h3{font-size:13px;font-weight:700;flex:1;color:var(--b1)}
+.popup-close{background:var(--cr2);border:none;border-radius:6px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;color:var(--tx2)}
+.popup-close:hover{background:var(--cr3)}
+.popup-body{flex:1;overflow-y:auto;padding:16px;-webkit-overflow-scrolling:touch}
+.popup-body p{font-size:13px;line-height:1.8;color:var(--tx);white-space:pre-wrap}
+.popup-body img{max-width:100%;border-radius:8px;display:block;margin:0 auto}
+.popup-body iframe{width:100%;height:420px;border:none;border-radius:8px}
+</style>
+</head>
+<body>
+
+<!-- ACCESS OVERLAY -->
+<div class="access-overlay" id="access-overlay">
+  <div class="access-box">
+    <div class="access-logo">
+      <svg width="64" height="56" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 52 L18 6 L32 52 M9 34 L27 34" stroke="#1A4A8A" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M29 52 L29 8 L43 30 L57 8 L57 52" stroke="#1A4A8A" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 56 Q32 53 62 56" stroke="#C8A030" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h2 id="access-title">El Ave María Ikastetxea<br><span style="font-weight:400;font-size:13px">Ebaluazio bisita · EUSKALIT 2026</span></h2>
+    <p id="access-desc">Sartzeko, mesedez idatzi pasahitza</p>
+    <input type="password" id="access-input" placeholder="••••••••" autocomplete="off">
+    <div class="access-err" id="access-err" id="access-err">Pasahitz okerra · Contraseña incorrecta</div>
+    <button class="access-btn" id="access-btn">
+      <i class="ri-login-box-fill"></i> <span id="access-btn-txt">Sartu · Entrar</span>
+    </button>
+  </div>
+</div>
+
+<div id="main-app" style="display:none">
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="logo-l6">
+    <svg width="38" height="42" viewBox="0 0 38 42" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 38 L10 4 L18 38 M5 26 L15 26" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16 38 L16 6 L25 21 L34 6 L34 38" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M0 41 Q19 39.5 37 41" stroke="#C8A030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div class="logo-l6-text">
+      <div class="ln1">El Ave María</div>
+      <div class="ln2">Ikastetxea · Bilbao</div>
+      <div class="ln3"></div>
+    </div>
+  </div>
+  <div class="tb-spacer"></div>
+  <div class="lang-sw">
+    <button class="lang-btn active" id="btn-eu" onclick="setLang('eu')">EU</button>
+    <button class="lang-btn" id="btn-es" onclick="setLang('es')">ES</button>
+  </div>
+  <div class="tb-btns">
+    <div class="edit-dot" id="edit-dot"></div>
+    <button class="btn-tb btn-home visible" id="btn-home" onclick="goHome()" style="display:none"><i class="ri-home-5-fill"></i> <span class="t" data-eu="Hasiera" data-es="Inicio"></span></button>
+    <button class="btn-tb btn-edit-idle visible" id="btn-edit" onclick="handleEditToggle()"><i class="ri-edit-fill"></i> <span class="t" data-eu="Editatu" data-es="Editar"></span></button>
+  </div>
+</div>
+
+<!-- HOME -->
+<div class="screen active" id="sc-home">
+  <p class="home-intro t" data-eu="Bisita ebaluaziorako dokumentazio-ataria. Hautatu atal bat." data-es="Portal de documentación para la visita evaluadora. Selecciona una sección."></p>
+  <div class="home-grid">
+    <div class="hcard hc1" onclick="goTo('logistica')">
+      <div class="hcard-top"><div class="hcard-ico"><i class="ri-map-pin-2-fill"></i></div><div class="hcard-arr"><i class="ri-arrow-right-s-line"></i></div></div>
+      <h3 class="t" data-eu="Logistika" data-es="Logística"></h3>
+      <p class="t" data-eu="Instalazioak, nola iritsi, ordutegiak eta organigrama" data-es="Instalaciones, acceso, horarios y organigrama"></p>
+      <div class="hcard-num">1</div>
+    </div>
+    <div class="hcard hc2" onclick="goTo('reunion')">
+      <div class="hcard-top"><div class="hcard-ico"><i class="ri-group-fill"></i></div><div class="hcard-arr"><i class="ri-arrow-right-s-line"></i></div></div>
+      <h3 class="t" data-eu="Aurretiazko bilera" data-es="Reunión previa"></h3>
+      <p class="t" data-eu="Prestakuntza dokumentazioa" data-es="Documentación de preparación"></p>
+      <div class="hcard-num">2</div>
+    </div>
+    <div class="hcard hc3" onclick="goTo('visitas')">
+      <div class="hcard-top"><div class="hcard-ico"><i class="ri-calendar-event-fill"></i></div><div class="hcard-arr"><i class="ri-arrow-right-s-line"></i></div></div>
+      <h3 class="t" data-eu="Bisitak" data-es="Visitas"></h3>
+      <p class="t" data-eu="Azaroak 3, 4 eta 10" data-es="3, 4 y 10 de noviembre"></p>
+      <div class="hcard-num">3</div>
+    </div>
+    <div class="hcard hc4" onclick="goTo('docs')">
+      <div class="hcard-top"><div class="hcard-ico"><i class="ri-folder-3-fill"></i></div><div class="hcard-arr"><i class="ri-arrow-right-s-line"></i></div></div>
+      <h3 class="t" data-eu="Ebaluazioko dokumentuak" data-es="Documentos para la evaluación"></h3>
+      <p class="t" data-eu="7 arlo tematiko" data-es="7 áreas temáticas"></p>
+      <div class="hcard-num">4</div>
+    </div>
+  </div>
+</div>
+
+<div class="screen" id="sc-logistica">
+  <div class="sect-hdr">
+    <h2 class="t" data-eu="Bisitaren logistika" data-es="Logística de visita"></h2>
+    <p class="t" data-eu="Instalazioak, nola iritsi, ordutegiak eta organigrama" data-es="Instalaciones, acceso, horarios y organigrama"></p>
+  </div>
+  <div id="zc-logistica"></div>
+</div>
+<div class="screen" id="sc-reunion">
+  <div class="sect-hdr">
+    <h2 class="t" data-eu="Aurretiazko bilera" data-es="Reunión previa"></h2>
+    <p class="t" data-eu="Ebaluazioa prestatzeko dokumentazioa" data-es="Documentación de preparación para la evaluación"></p>
+  </div>
+  <div id="zc-reunion"></div>
+</div>
+<div class="screen" id="sc-visitas">
+  <div class="sect-hdr">
+    <h2 class="t" data-eu="Ikastetxerako bisitak" data-es="Visitas al centro"></h2>
+    <p class="t" data-eu="Dokumentazioa jardunaldi bakoitzeko" data-es="Documentación por jornada de evaluación"></p>
+  </div>
+  <div id="zc-visitas"></div>
+</div>
+<div class="screen" id="sc-docs">
+  <div class="sect-hdr">
+    <h2 class="t" data-eu="Ebaluazioko dokumentuak" data-es="Documentos para la evaluación"></h2>
+    <p class="t" data-eu="Arlo tematikoaren arabera antolatuta" data-es="Organizados por área temática"></p>
+  </div>
+  <div id="zc-docs"></div>
+</div>
+
+<div id="mroot"></div>
+<button class="btn-save-global" id="btn-save-global" onclick="saveToGitHub()">
+  <i class="ri-save-fill"></i> <span class="t" data-eu="Aldaketak gorde" data-es="Guardar cambios"></span>
+</button>
+</div><!-- /main-app -->
+
+<script>
+// ── CONFIG ──
+const GH_USER  = 'anderzarrabeitia';
+const GH_REPO  = 'eami_euskalit';
+const GH_FILE  = 'data.json';
+const GH_TOKEN = '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';
+const PW_ACCESS = 'ongietorri';
+const PW_EDIT   = 'urrezkoA';
+const GH_API    = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GH_FILE}`;
+
+const ICONS=['ri-file-fill','ri-file-text-fill','ri-file-list-3-fill','ri-files-fill','ri-folder-fill','ri-folder-open-fill',
+'ri-building-2-fill','ri-home-5-fill','ri-door-fill','ri-map-fill','ri-map-pin-2-fill','ri-map-2-fill','ri-compass-fill','ri-parking-fill',
+'ri-image-fill','ri-camera-fill','ri-car-fill','ri-bus-fill','ri-walk-fill','ri-train-fill','ri-bike-fill',
+'ri-group-fill','ri-user-fill','ri-user-star-fill','ri-contacts-fill','ri-vip-crown-fill','ri-organization-chart','ri-mind-map',
+'ri-briefcase-fill','ri-school-fill','ri-award-fill','ri-trophy-fill','ri-star-fill','ri-heart-fill','ri-flag-fill',
+'ri-time-fill','ri-calendar-fill','ri-calendar-event-fill','ri-global-fill','ri-link','ri-instagram-fill','ri-facebook-fill',
+'ri-mail-fill','ri-phone-fill','ri-book-fill','ri-book-open-fill','ri-draft-fill','ri-article-fill','ri-slideshow-fill',
+'ri-bar-chart-fill','ri-pie-chart-fill','ri-focus-3-fill','ri-checkbox-multiple-fill','ri-list-check-3',
+'ri-tools-fill','ri-settings-fill','ri-puzzle-fill','ri-pencil-fill','ri-smartphone-fill',
+'ri-lightbulb-flash-fill','ri-robot-fill','ri-shield-fill','ri-eye-fill','ri-search-fill'];
+
+const BADGE={web:'WEB',txt:'TXT',img:'IMG',pdf:'PDF'};
+const BADGECLS={web:'badge-web',txt:'badge-txt',img:'badge-img',pdf:'badge-pdf'};
+
+// Traducciones de zonas
+const ZONE_LABELS = {
+  l1:{eu:'El Ave María · Instalazioak',es:'El Ave María · Instalaciones'},
+  l2:{eu:'Nola iritsi',es:'Cómo llegar'},
+  l3:{eu:'Organigrama eta pertsonak',es:'Organigrama y personas'},
+  l4:{eu:'Zerbitzua',es:'Servicio'},
+  l5:{eu:'Web eta SSEE',es:'Web y RRSS'},
+  r1:{eu:'Ebaluatzaile taldearen dokumentuak',es:'Documentos del equipo evaluador'},
+  r2:{eu:'Erakundearen dokumentazioa',es:'Documentación de la organización'},
+  v1:{eu:'1. bisita · Azaroak 3',es:'Visita 1 · 3 de noviembre'},
+  v2:{eu:'2. bisita · Azaroak 4',es:'Visita 2 · 4 de noviembre'},
+  v3:{eu:'3. bisita · Azaroak 10',es:'Visita 3 · 10 de noviembre'},
+  d1:{eu:'Dokumentazio orokorra',es:'Documentación general'},
+  d2:{eu:'Estrategia',es:'Estrategia'},
+  d3:{eu:'Bezeroak',es:'Clientes'},
+  d4:{eu:'Pertsonak',es:'Personas'},
+  d5:{eu:'Gizartea',es:'Sociedad'},
+  d6:{eu:'Berrikuntza',es:'Innovación'},
+  d7:{eu:'Adierazleak',es:'Indicadores'},
+};
+
+// Traducciones de tiles por defecto
+const DEFAULT_DATA={
+  logistica:{zones:[
+    {id:'l1',icon:'ri-building-2-fill',col:'zb',tiles:[
+      {leu:'Ikastetxearen fitxa',les:'Ficha del centro',i:'ri-file-text-fill',t:'web',ceu:'',ces:''},
+      {leu:'Eraikinaren planoa',les:'Plano del edificio',i:'ri-map-fill',t:'web',ceu:'',ces:''},
+      {leu:'Instalazio argazkiak',les:'Fotos instalaciones',i:'ri-image-fill',t:'web',ceu:'',ces:''},
+      {leu:'Ikastetxearen historia',les:'Historia del centro',i:'ri-book-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'l2',icon:'ri-map-pin-2-fill',col:'zg',tiles:[
+      {leu:'Sarbide mapa',les:'Mapa de acceso',i:'ri-map-2-fill',t:'web',ceu:'',ces:''},
+      {leu:'Garraio publikoa',les:'Transporte público',i:'ri-bus-fill',t:'web',ceu:'',ces:''},
+      {leu:'Aparkalekua',les:'Aparcamiento',i:'ri-parking-fill',t:'txt',ceu:'',ces:''},
+      {leu:'Oinez argibideak',les:'Indicaciones a pie',i:'ri-walk-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'l3',icon:'ri-organization-chart',col:'zp',tiles:[
+      {leu:'Organigrama',les:'Organigrama',i:'ri-mind-map',t:'web',ceu:'',ces:''},
+      {leu:'Zuzendaritza taldea',les:'Equipo directivo',i:'ri-vip-crown-fill',t:'web',ceu:'',ces:''},
+      {leu:'Prozesu-arduradunak',les:'Responsables proceso',i:'ri-user-star-fill',t:'web',ceu:'',ces:''},
+      {leu:'Langileen zerrenda',les:'Relación personal',i:'ri-contacts-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'l4',icon:'ri-school-fill',col:'za',tiles:[
+      {leu:'Hezkuntza eskaintza',les:'Oferta educativa',i:'ri-book-open-fill',t:'web',ceu:'',ces:''},
+      {leu:'Ordutegiak',les:'Horarios',i:'ri-calendar-event-fill',t:'web',ceu:'',ces:''},
+      {leu:'Zerbitzu osagarriak',les:'Servicios complementarios',i:'ri-tools-fill',t:'web',ceu:'',ces:''},
+      {leu:'Proiektu eleaniztuna',les:'Proyecto trilingüe',i:'ri-global-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'l5',icon:'ri-global-fill',col:'zb',tiles:[
+      {leu:'Ikastetxearen weba',les:'Web del centro',i:'ri-global-fill',t:'web',ceu:'',ces:''},
+      {leu:'Instagram',les:'Instagram',i:'ri-instagram-fill',t:'web',ceu:'',ces:''},
+      {leu:'Facebook',les:'Facebook',i:'ri-facebook-fill',t:'web',ceu:'',ces:''},
+      {leu:'Harremanetan jarri',les:'Correo contacto',i:'ri-mail-fill',t:'txt',ceu:'',ces:''},
+    ]},
+  ]},
+  reunion:{zones:[
+    {id:'r1',icon:'ri-group-fill',col:'zg',tiles:[
+      {leu:'Bilera deia',les:'Convocatoria reunión',i:'ri-calendar-event-fill',t:'web',ceu:'',ces:''},
+      {leu:'Ebaluazio protokoloa',les:'Protocolo evaluación',i:'ri-file-list-3-fill',t:'pdf',ceu:'',ces:''},
+      {leu:'EUSKALIT irizpideak',les:'Criterios EUSKALIT',i:'ri-checkbox-multiple-fill',t:'pdf',ceu:'',ces:''},
+      {leu:'Bisita agenda',les:'Agenda de la visita',i:'ri-list-check-3',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'r2',icon:'ri-building-2-fill',col:'zb',tiles:[
+      {leu:'Ikastetxearen aurkezpena',les:'Presentación del centro',i:'ri-slideshow-fill',t:'web',ceu:'',ces:''},
+      {leu:'Kudeaketa memoria',les:'Memoria de gestión',i:'ri-article-fill',t:'pdf',ceu:'',ces:''},
+      {leu:'Prozesuen mapa',les:'Mapa de procesos',i:'ri-mind-map',t:'web',ceu:'',ces:''},
+      {leu:'Plan estrategikoa 2024-28',les:'Plan estratégico 2024-28',i:'ri-focus-3-fill',t:'web',ceu:'',ces:''},
+    ]},
+  ]},
+  visitas:{zones:[
+    {id:'v1',icon:'ri-calendar-event-fill',col:'zb',tiles:[
+      {leu:'Eguneko programa',les:'Programa del día',i:'ri-list-check-3',t:'txt',ceu:'',ces:''},
+      {leu:'Aurreikusitako elkarrizketak',les:'Entrevistas previstas',i:'ri-group-fill',t:'txt',ceu:'',ces:''},
+      {leu:'Laguntza dokumentuak',les:'Documentos de apoyo',i:'ri-files-fill',t:'web',ceu:'',ces:''},
+      {leu:'Saioaren oharrak',les:'Notas de sesión',i:'ri-draft-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'v2',icon:'ri-calendar-event-fill',col:'zg',tiles:[
+      {leu:'Eguneko programa',les:'Programa del día',i:'ri-list-check-3',t:'txt',ceu:'',ces:''},
+      {leu:'Aurreikusitako elkarrizketak',les:'Entrevistas previstas',i:'ri-group-fill',t:'txt',ceu:'',ces:''},
+      {leu:'Laguntza dokumentuak',les:'Documentos de apoyo',i:'ri-files-fill',t:'web',ceu:'',ces:''},
+      {leu:'Saioaren oharrak',les:'Notas de sesión',i:'ri-draft-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'v3',icon:'ri-calendar-event-fill',col:'za',tiles:[
+      {leu:'Eguneko programa',les:'Programa del día',i:'ri-list-check-3',t:'txt',ceu:'',ces:''},
+      {leu:'Aurreikusitako elkarrizketak',les:'Entrevistas previstas',i:'ri-group-fill',t:'txt',ceu:'',ces:''},
+      {leu:'Laguntza dokumentuak',les:'Documentos de apoyo',i:'ri-files-fill',t:'web',ceu:'',ces:''},
+      {leu:'Saioaren oharrak',les:'Notas de sesión',i:'ri-draft-fill',t:'txt',ceu:'',ces:''},
+    ]},
+  ]},
+  docs:{zones:[
+    {id:'d1',icon:'ri-folder-3-fill',col:'zb',tiles:[
+      {leu:'Memoria osoa',les:'Memoria completa',i:'ri-article-fill',t:'pdf',ceu:'',ces:''},
+      {leu:'Ikastetxearen datuak',les:'Datos del centro',i:'ri-file-text-fill',t:'web',ceu:'',ces:''},
+      {leu:'Autoebaluazioa',les:'Autoevaluación',i:'ri-checkbox-multiple-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'d2',icon:'ri-focus-3-fill',col:'zp',tiles:[
+      {leu:'Plan estrategikoa',les:'Plan estratégico',i:'ri-focus-3-fill',t:'web',ceu:'',ces:''},
+      {leu:'Ildo estrategikoak',les:'Líneas estratégicas',i:'ri-list-check-3',t:'txt',ceu:'',ces:''},
+      {leu:'2024-28 jarraipena',les:'Seguimiento 2024-28',i:'ri-bar-chart-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'d3',icon:'ri-heart-fill',col:'zr',tiles:[
+      {leu:'Familien asebetetzea',les:'Satisfacción familias',i:'ri-heart-fill',t:'web',ceu:'',ces:''},
+      {leu:'Ikasleen inkestak',les:'Encuestas alumnado',i:'ri-bar-chart-fill',t:'web',ceu:'',ces:''},
+      {leu:'Kexen kudeaketa',les:'Gestión de quejas',i:'ri-file-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'d4',icon:'ri-group-fill',col:'zg',tiles:[
+      {leu:'Taldearen ongizatea',les:'Bienestar equipo',i:'ri-group-fill',t:'web',ceu:'',ces:''},
+      {leu:'Etengabeko prestakuntza',les:'Formación continua',i:'ri-award-fill',t:'web',ceu:'',ces:''},
+      {leu:'Errendimendu ebaluazioa',les:'Evaluación desempeño',i:'ri-star-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'d5',icon:'ri-global-fill',col:'za',tiles:[
+      {leu:'SROI',les:'SROI',i:'ri-bar-chart-fill',t:'web',ceu:'',ces:''},
+      {leu:'Komunitate proiektuak',les:'Proyectos comunidad',i:'ri-global-fill',t:'web',ceu:'',ces:''},
+      {leu:'Iraunkortasuna',les:'Sostenibilidad',i:'ri-flag-fill',t:'txt',ceu:'',ces:''},
+    ]},
+    {id:'d6',icon:'ri-lightbulb-flash-fill',col:'zb',tiles:[
+      {leu:'Berrikuntza proiektuak',les:'Proyectos innovación',i:'ri-lightbulb-flash-fill',t:'web',ceu:'',ces:''},
+      {leu:'App pedagogikoak',les:'Apps pedagógicas',i:'ri-smartphone-fill',t:'web',ceu:'',ces:''},
+      {leu:'Robotika hezigarria',les:'Robótica educativa',i:'ri-robot-fill',t:'web',ceu:'',ces:''},
+    ]},
+    {id:'d7',icon:'ri-bar-chart-fill',col:'zp',tiles:[
+      {leu:'Aginte-koadroa',les:'Cuadro de mando',i:'ri-bar-chart-fill',t:'web',ceu:'',ces:''},
+      {leu:'KPI nagusiak',les:'KPIs clave',i:'ri-focus-3-fill',t:'web',ceu:'',ces:''},
+      {leu:'Emaitzen bilakaera',les:'Evolución resultados',i:'ri-pie-chart-fill',t:'web',ceu:'',ces:''},
+    ]},
+  ]},
+};
+
+// ── STATE ──
+let ST = JSON.parse(JSON.stringify(DEFAULT_DATA));
+let ghSha = null;
+let editMode = false;
+let lang = 'eu';
+let selIco = 'ri-file-fill';
+
+// ── LANG ──
+function setLang(l){
+  lang = l;
+  document.getElementById('btn-eu').classList.toggle('active', l==='eu');
+  document.getElementById('btn-es').classList.toggle('active', l==='es');
+  document.querySelectorAll('.t[data-eu]').forEach(el=>{
+    el.textContent = el.dataset[l] || el.dataset['eu'];
+  });
+  // re-render zones con nuevo idioma
+  ['logistica','reunion','visitas','docs'].forEach(sec=>{
+    if(ST[sec]) ST[sec].zones.forEach(z=>renderZone(sec,z.id,z.col));
+  });
+  // zone headers
+  document.querySelectorAll('[data-zid]').forEach(el=>{
+    const zid = el.dataset.zid;
+    if(ZONE_LABELS[zid]) el.textContent = ZONE_LABELS[zid][l];
+  });
+}
+
+// ── ACCESS ──
+document.getElementById('access-btn').onclick = tryAccess;
+document.getElementById('access-input').addEventListener('keydown',e=>{ if(e.key==='Enter') tryAccess(); });
+function tryAccess(){
+  const v = document.getElementById('access-input').value;
+  if(v === PW_ACCESS){
+    document.getElementById('access-overlay').style.display='none';
+    document.getElementById('main-app').style.display='block';
+    loadFromGitHub();
+    setLang('eu');
+  } else {
+    document.getElementById('access-err').classList.add('show');
+    document.getElementById('access-input').value='';
+    document.getElementById('access-input').focus();
+  }
+}
+
+// ── GITHUB ──
+async function loadFromGitHub(){
+  try{
+    const r = await fetch(GH_API,{headers:{'Authorization':'token '+GH_TOKEN,'Accept':'application/vnd.github.v3+json'}});
+    if(!r.ok) return buildAll();
+    const json = await r.json();
+    ghSha = json.sha;
+    ST = JSON.parse(atob(json.content.replace(/\n/g,'')));
+  } catch(e){ console.warn('Defaults used',e); }
+  buildAll();
+  setLang('eu');
+}
+
+async function saveToGitHub(){
+  const btn = document.getElementById('btn-save-global');
+  btn.classList.add('saving');
+  btn.querySelector('span').textContent = lang==='eu'?'Gordetzen…':'Guardando…';
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(ST,null,2))));
+  const body = {message:'EUSKALIT update '+new Date().toLocaleString('es-ES'),content};
+  if(ghSha) body.sha = ghSha;
+  try{
+    const r = await fetch(GH_API,{method:'PUT',headers:{'Authorization':'token '+GH_TOKEN,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},body:JSON.stringify(body)});
+    const json = await r.json();
+    if(r.ok){
+      ghSha = json.content.sha;
+      btn.querySelector('span').textContent = lang==='eu'?'✓ Gordeta':'✓ Guardado';
+      setTimeout(()=>{btn.classList.remove('saving');btn.querySelector('span').textContent=lang==='eu'?'Aldaketak gorde':'Guardar cambios';},2500);
+    } else throw new Error(json.message);
+  } catch(e){
+    btn.querySelector('span').textContent='Error';
+    btn.classList.remove('saving');
+    setTimeout(()=>{btn.querySelector('span').textContent=lang==='eu'?'Aldaketak gorde':'Guardar cambios';},3000);
+  }
+}
+
+// ── EDIT MODE ──
+function handleEditToggle(){
+  if(!editMode){ showPwModal(); } else { exitEditMode(); }
+}
+function showPwModal(){
+  document.querySelectorAll('.pw-bg').forEach(x=>x.remove());
+  const bg=document.createElement('div'); bg.className='pw-bg';
+  bg.innerHTML=`<div class="pw-box">
+    <h2>${lang==='eu'?'Edizio modua':'Modo edición'}</h2>
+    <p>${lang==='eu'?'Aldaketak egiteko pasahitza sartu':'Introduce la contraseña para editar'}</p>
+    <input type="password" id="pw-i" placeholder="••••••••" autocomplete="off">
+    <div class="pw-err" id="pw-e">${lang==='eu'?'Pasahitz okerra':'Contraseña incorrecta'}</div>
+    <div class="pw-btns">
+      <button class="pw-cancel" id="pw-c">${lang==='eu'?'Utzi':'Cancelar'}</button>
+      <button class="pw-ok" id="pw-ok"><i class="ri-check-fill"></i> ${lang==='eu'?'Sartu':'Entrar'}</button>
+    </div>
+  </div>`;
+  document.getElementById('mroot').appendChild(bg);
+  const inp=bg.querySelector('#pw-i'); inp.focus();
+  function tryPw(){
+    if(inp.value===PW_EDIT){ bg.remove(); enterEditMode(); }
+    else { bg.querySelector('#pw-e').classList.add('show'); inp.value=''; inp.focus(); }
+  }
+  bg.querySelector('#pw-ok').onclick=tryPw;
+  bg.querySelector('#pw-c').onclick=()=>bg.remove();
+  inp.addEventListener('keydown',e=>{ if(e.key==='Enter') tryPw(); });
+}
+function enterEditMode(){
+  editMode=true;
+  document.getElementById('main-app').classList.add('edit-mode');
+  document.getElementById('btn-edit').className='btn-tb btn-edit-on visible';
+  document.getElementById('btn-edit').innerHTML=`<i class="ri-close-circle-fill"></i> <span class="t" data-eu="Itxi" data-es="Salir"></span>`;
+  setLang(lang);
+  document.getElementById('edit-dot').classList.add('show');
+  document.getElementById('btn-save-global').classList.add('show');
+}
+function exitEditMode(){
+  editMode=false;
+  document.getElementById('main-app').classList.remove('edit-mode');
+  document.getElementById('btn-edit').className='btn-tb btn-edit-idle visible';
+  document.getElementById('btn-edit').innerHTML=`<i class="ri-edit-fill"></i> <span class="t" data-eu="Editatu" data-es="Editar"></span>`;
+  setLang(lang);
+  document.getElementById('edit-dot').classList.remove('show');
+  document.getElementById('btn-save-global').classList.remove('show');
+}
+
+// ── NAV ──
+function goHome(){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sc-home').classList.add('active');
+  document.getElementById('btn-home').style.display='none';
+}
+function goTo(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('sc-'+id).classList.add('active');
+  document.getElementById('btn-home').style.display='flex';
+}
+
+function colA(c){return c==='zg'?'var(--gn)':c==='za'?'var(--am)':c==='zp'?'var(--pu)':c==='zr'?'var(--rd)':'var(--b1)';}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
+
+// ── VISOR ──
+function openViewer(tile){
+  document.querySelectorAll('.popup-bg').forEach(x=>x.remove());
+  // decide content based on lang
+  const c = lang==='eu' ? (tile.ceu||tile.ces||'') : (tile.ces||tile.ceu||'');
+  const lbl = lang==='eu' ? (tile.leu||tile.les||'') : (tile.les||tile.leu||'');
+  if(tile.t==='web'){ if(c) window.open(c,'_blank','noopener'); return; }
+  const bg=document.createElement('div'); bg.className='popup-bg';
+  let bodyHtml='';
+  if(tile.t==='txt') bodyHtml=`<p>${esc(c||'(Sin contenido · Edukia gabe)')}</p>`;
+  else if(tile.t==='img') bodyHtml=`<img src="${esc(c)}" alt="${esc(lbl)}">`;
+  else if(tile.t==='pdf') bodyHtml=`<iframe src="${esc(c)}" title="${esc(lbl)}"></iframe>`;
+  bg.innerHTML=`<div class="popup"><div class="popup-hdr"><h3>${esc(lbl)}</h3><button class="popup-close" id="pclose"><i class="ri-close-line"></i></button></div><div class="popup-body">${bodyHtml}</div></div>`;
+  document.getElementById('mroot').appendChild(bg);
+  bg.querySelector('#pclose').onclick=()=>bg.remove();
+  bg.addEventListener('click',e=>{ if(e.target===bg) bg.remove(); });
+}
+
+// ── MODAL ──
+function openModal(secId,zid,idx,isNew,col){
+  if(!editMode) return;
+  const zone = ST[secId].zones.find(z=>z.id===zid);
+  const tiles = zone.tiles;
+  const t = isNew ? {leu:'',les:'',i:'ri-file-fill',t:'web',ceu:'',ces:''} : {...tiles[idx]};
+  selIco = t.i||'ri-file-fill';
+  let curType = t.t||'web';
+  const acc = colA(col);
+  document.querySelectorAll('.mbg').forEach(x=>x.remove());
+
+  const bg=document.createElement('div'); bg.className='mbg';
+  const modal=document.createElement('div'); modal.className='modal';
+
+  const head=document.createElement('div'); head.className='m-head';
+  head.innerHTML=`<div class="m-title" style="color:${acc}"><i class="${isNew?'ri-add-circle-fill':'ri-edit-fill'}"></i>${isNew?(lang==='eu'?'Kutxa berria':'Nueva casilla'):(lang==='eu'?'Kutxa editatu':'Editar casilla')}</div>`;
+  modal.appendChild(head);
+
+  const body=document.createElement('div'); body.className='m-body';
+
+  // Nombre bilingüe
+  const fldN=document.createElement('div'); fldN.className='fld';
+  fldN.innerHTML=`<label>${lang==='eu'?'Izena':'Nombre'}</label>
+  <div class="bi-group">
+    <div class="bi-row"><span class="bi-flag">🇪🇺</span><input id="mleu" type="text" value="${esc(t.leu||'')}" placeholder="Izena euskaraz"></div>
+    <div class="bi-row"><span class="bi-flag">🇪🇸</span><input id="mles" type="text" value="${esc(t.les||'')}" placeholder="Nombre en castellano"></div>
+  </div>`;
+  body.appendChild(fldN);
+
+  // Tipo
+  const fldT=document.createElement('div'); fldT.className='fld';
+  fldT.innerHTML=`<label>${lang==='eu'?'Eduki mota':'Tipo de contenido'}</label>
+  <div class="type-pills">
+    <div class="tpill${curType==='web'?' sel-web':''}" data-tp="web">🌐 WEB</div>
+    <div class="tpill${curType==='txt'?' sel-txt':''}" data-tp="txt">📝 TEXT</div>
+    <div class="tpill${curType==='img'?' sel-img':''}" data-tp="img">🖼 IMG</div>
+    <div class="tpill${curType==='pdf'?' sel-pdf':''}" data-tp="pdf">📄 PDF</div>
+  </div>`;
+  body.appendChild(fldT);
+
+  // Contenido bilingüe
+  const fldC=document.createElement('div'); fldC.className='fld'; fldC.id='fld-content';
+  body.appendChild(fldC);
+
+  // Icono picker
+  const pickWrap=document.createElement('div');
+  pickWrap.innerHTML=`<div class="ipick-lbl">${lang==='eu'?'Ikonoa':'Icono'}</div><div class="igrid" id="ig"></div>`;
+  body.appendChild(pickWrap);
+
+  if(!isNew){
+    const delBox=document.createElement('div'); delBox.className='del-box'; delBox.id='del-box';
+    delBox.innerHTML=`<p><i class="ri-error-warning-fill"></i> ${lang==='eu'?'Kutxa ezabatu nahi duzu?':'¿Eliminar esta casilla?'}</p>
+    <div class="del-box-btns">
+      <button class="dbno" id="dbn">${lang==='eu'?'Ez, itzuli':'No, volver'}</button>
+      <button class="dbyes" id="dby">${lang==='eu'?'Bai, ezabatu':'Sí, eliminar'}</button>
+    </div>`;
+    body.appendChild(delBox);
+  }
+  modal.appendChild(body);
+
+  // Footer
+  const foot=document.createElement('div'); foot.className='m-foot';
+  if(!isNew){
+    const bd=document.createElement('button'); bd.className='mbtn mbd'; bd.id='md';
+    bd.innerHTML=`<i class="ri-delete-bin-fill"></i> ${lang==='eu'?'Ezabatu':'Eliminar'}`;
+    foot.appendChild(bd);
+  }
+  const sp=document.createElement('div'); sp.style.flex='1'; foot.appendChild(sp);
+  const bc=document.createElement('button'); bc.className='mbtn mbs';
+  bc.innerHTML=lang==='eu'?'Utzi':'Cancelar'; foot.appendChild(bc);
+  const bs=document.createElement('button'); bs.className='mbtn mbp'; bs.style.background=acc;
+  bs.innerHTML=`<i class="ri-check-fill"></i> ${lang==='eu'?'Gorde':'Guardar'}`; foot.appendChild(bs);
+  modal.appendChild(foot);
+  bg.appendChild(modal);
+  document.getElementById('mroot').appendChild(bg);
+
+  function renderContent(){
+    const phweb='https://...';
+    const phtxt=lang==='eu'?'Testua idatzi hemen...':'Escribe aquí el texto...';
+    const phimg='URL (https://...)';
+    const phpdf='URL PDF (https://...)';
+    if(curType==='txt'){
+      fldC.innerHTML=`<label>${lang==='eu'?'Testua':'Texto'}</label>
+      <div class="bi-group">
+        <div class="bi-row"><span class="bi-flag">🇪🇺</span><textarea id="mceu" placeholder="${phtxt}">${esc(t.ceu||'')}</textarea></div>
+        <div class="bi-row"><span class="bi-flag">🇪🇸</span><textarea id="mces" placeholder="${phtxt}">${esc(t.ces||'')}</textarea></div>
+      </div>`;
+    } else if(curType==='web'){
+      fldC.innerHTML=`<label>URL</label>
+      <div class="bi-group">
+        <div class="bi-row"><span class="bi-flag">🇪🇺</span><input id="mceu" type="url" value="${esc(t.ceu||'')}" placeholder="${phweb}"></div>
+        <div class="bi-row"><span class="bi-flag">🇪🇸</span><input id="mces" type="url" value="${esc(t.ces||'')}" placeholder="${phweb}"></div>
+      </div>`;
+    } else {
+      const ph = curType==='img'?phimg:phpdf;
+      fldC.innerHTML=`<label>${curType==='img'?'URL imagen':'URL PDF'}</label>
+      <div class="bi-group">
+        <div class="bi-row"><span class="bi-flag">🇪🇺</span><input id="mceu" type="url" value="${esc(t.ceu||'')}" placeholder="${ph}"></div>
+        <div class="bi-row"><span class="bi-flag">🇪🇸</span><input id="mces" type="url" value="${esc(t.ces||'')}" placeholder="${ph}"></div>
+      </div>`;
+    }
+  }
+  renderContent();
+
+  body.querySelectorAll('.tpill').forEach(p=>{
+    p.onclick=()=>{
+      const eu=fldC.querySelector('#mceu'); const es=fldC.querySelector('#mces');
+      if(eu) t.ceu=eu.value; if(es) t.ces=es.value;
+      body.querySelectorAll('.tpill').forEach(x=>x.className='tpill');
+      p.classList.add('sel-'+p.dataset.tp);
+      curType=p.dataset.tp; renderContent();
+    };
+  });
+
+  const grid=body.querySelector('#ig');
+  ICONS.forEach(ic=>{
+    const d=document.createElement('div'); d.className='iopt'+(ic===selIco?' sel':'');
+    d.innerHTML=`<i class="${ic}"></i>`;
+    d.onclick=()=>{grid.querySelectorAll('.iopt').forEach(x=>x.classList.remove('sel'));d.classList.add('sel');selIco=ic;};
+    grid.appendChild(d);
+  });
+  const selEl=grid.querySelector('.sel'); if(selEl) setTimeout(()=>selEl.scrollIntoView({block:'nearest'}),50);
+
+  body.querySelector('#mleu').focus();
+  bg.addEventListener('click',e=>{ if(e.target===bg) bg.remove(); });
+  bc.onclick=()=>bg.remove();
+
+  if(!isNew){
+    foot.querySelector('#md').onclick=()=>{body.querySelector('#del-box').classList.add('show');foot.querySelector('#md').style.visibility='hidden';};
+    body.querySelector('#dbn').onclick=()=>{body.querySelector('#del-box').classList.remove('show');foot.querySelector('#md').style.visibility='visible';};
+    body.querySelector('#dby').onclick=()=>{tiles.splice(idx,1);renderZone(secId,zid,col);bg.remove();};
+  }
+
+  bs.onclick=()=>{
+    const leu=body.querySelector('#mleu').value.trim();
+    const les=body.querySelector('#mles').value.trim();
+    const eu=fldC.querySelector('#mceu'); const es=fldC.querySelector('#mces');
+    const ceu=eu?eu.value.trim():''; const ces=es?es.value.trim():'';
+    if(!leu&&!les){body.querySelector('#mleu').style.borderColor='var(--rd)';body.querySelector('#mleu').focus();return;}
+    if(isNew) tiles.push({leu,les,i:selIco,t:curType,ceu,ces});
+    else{tiles[idx].leu=leu;tiles[idx].les=les;tiles[idx].i=selIco;tiles[idx].t=curType;tiles[idx].ceu=ceu;tiles[idx].ces=ces;}
+    renderZone(secId,zid,col); bg.remove();
+  };
+}
+
+// ── RENDER ──
+function renderZone(secId,zid,col){
+  const wrap=document.getElementById('zb-'+zid); if(!wrap) return;
+  const zone=ST[secId].zones.find(z=>z.id===zid);
+  const tiles=zone.tiles;
+  wrap.innerHTML='';
+  tiles.forEach((t,i)=>{
+    const lbl = lang==='eu' ? (t.leu||t.les||'') : (t.les||t.leu||'');
+    const hasContent = !!(t.ceu||t.ces);
+    const d=document.createElement('div');
+    d.className='tile'+(hasContent?' filled':'');
+    d.title=lbl;
+    const badgeLbl=BADGE[t.t]||'WEB';
+    const badgeCls=BADGECLS[t.t]||'badge-web';
+    d.innerHTML=`<div class="ti-ico"><i class="${t.i||'ri-file-fill'}"></i></div><div class="ti-lbl">${esc(lbl)}</div>${hasContent?`<div class="ti-badge ${badgeCls}">${badgeLbl}</div>`:''}<div class="ti-pen"><i class="ri-pencil-fill"></i></div>`;
+    d.onclick=e=>{
+      if(e.target.closest('.ti-pen')||(!hasContent&&editMode)) openModal(secId,zid,i,false,col);
+      else if(hasContent) openViewer(t);
+    };
+    wrap.appendChild(d);
+  });
+  const add=document.createElement('div'); add.className='add-tile'; add.setAttribute('role','button');
+  add.innerHTML=`<i class="ri-add-circle-line"></i><span>${lang==='eu'?'Gehitu':'Añadir'}</span>`;
+  add.onclick=()=>openModal(secId,zid,null,true,col);
+  wrap.appendChild(add);
+}
+
+function buildSec(secId,contId){
+  const sec=ST[secId]; if(!sec) return;
+  const cont=document.getElementById(contId); if(!cont) return;
+  cont.innerHTML='';
+  sec.zones.forEach(z=>{
+    const zl = ZONE_LABELS[z.id] || {eu:z.id,es:z.id};
+    const el=document.createElement('div'); el.className='zone '+z.col;
+    el.innerHTML=`<div class="zone-hdr" role="button" tabindex="0" aria-expanded="false">
+      <i class="${z.icon} zh-ico"></i>
+      <span data-zid="${z.id}">${zl[lang]}</span>
+      <i class="ri-arrow-down-s-line zh-ch"></i>
+    </div><div class="zone-body" id="zb-${z.id}"></div>`;
+    const hdr=el.querySelector('.zone-hdr');
+    const zb=el.querySelector('.zone-body');
+    const ch=el.querySelector('.zh-ch');
+    hdr.onclick=()=>{const o=zb.classList.contains('open');zb.classList.toggle('open',!o);ch.classList.toggle('open',!o);hdr.setAttribute('aria-expanded',String(!o));};
+    hdr.onkeydown=e=>{if(e.key==='Enter'||e.key===' ')hdr.click();};
+    cont.appendChild(el);
+    renderZone(secId,z.id,z.col);
+  });
+}
+
+function buildAll(){
+  buildSec('logistica','zc-logistica');
+  buildSec('reunion','zc-reunion');
+  buildSec('visitas','zc-visitas');
+  buildSec('docs','zc-docs');
+}
+</script>
+</body>
+</html>
