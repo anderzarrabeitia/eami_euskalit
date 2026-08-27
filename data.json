@@ -40,8 +40,12 @@
           {
             "l": "Historia del centro",
             "i": "ri-book-fill",
-            "t": "txt",
-            "c": ""
+            "t": "web",
+            "c": "",
+            "leu": "Ikastetxearen historia",
+            "les": "Historia del centro",
+            "ceu": "https://www.elavemaria.eus/eu/zentroa/historiako-100-urte",
+            "ces": "https://www.elavemaria.eus/es/el-centro/cien-anos-de-historia"
           }
         ]
       },
