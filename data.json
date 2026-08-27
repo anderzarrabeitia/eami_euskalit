@@ -75,7 +75,11 @@
             "l": "Aparcamiento",
             "i": "ri-parking-fill",
             "t": "txt",
-            "c": ""
+            "c": "",
+            "leu": "Aparkalekua",
+            "les": "Parking",
+            "ceu": "Ikastetxean aparkalekua dago.",
+            "ces": "El propio colegio tiene parking."
           },
           {
             "l": "Indicaciones a pie",
