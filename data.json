@@ -3,7 +3,7 @@
     "zones": [
       {
         "id": "l1",
-        "lbl": "El Ave MarÃ­a Â· Instalaciones",
+        "lbl": "El Ave MarÃÂ­a ÃÂ· Instalaciones",
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
@@ -33,7 +33,7 @@
             "t": "pdf",
             "c": "",
             "leu": "Non gaude?",
-            "les": "Dónde estamos",
+            "les": "DÃ³nde estamos",
             "ceu": "https://drive.google.com/file/d/1SZESBHhw4utW0p-cNQj_J8AwBpKrGIVc/view?usp=drive_link",
             "ces": "https://drive.google.com/file/d/1SZESBHhw4utW0p-cNQj_J8AwBpKrGIVc/view?usp=drive_link"
           },
@@ -47,7 +47,7 @@
       },
       {
         "id": "l2",
-        "lbl": "CÃ³mo llegar",
+        "lbl": "CÃÂ³mo llegar",
         "icon": "ri-map-pin-2-fill",
         "col": "zg",
         "tiles": [
@@ -58,7 +58,7 @@
             "c": ""
           },
           {
-            "l": "Transporte pÃºblico",
+            "l": "Transporte pÃÂºblico",
             "i": "ri-bus-fill",
             "t": "web",
             "c": ""
@@ -102,7 +102,7 @@
             "c": ""
           },
           {
-            "l": "RelaciÃ³n personal",
+            "l": "RelaciÃÂ³n personal",
             "i": "ri-contacts-fill",
             "t": "web",
             "c": ""
@@ -134,7 +134,7 @@
             "c": ""
           },
           {
-            "l": "Proyecto trilingÃ¼e",
+            "l": "Proyecto trilingÃÂ¼e",
             "i": "ri-global-fill",
             "t": "web",
             "c": ""
@@ -184,13 +184,13 @@
         "col": "zg",
         "tiles": [
           {
-            "l": "Convocatoria reuniÃ³n",
+            "l": "Convocatoria reuniÃÂ³n",
             "i": "ri-calendar-event-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Protocolo evaluaciÃ³n",
+            "l": "Protocolo evaluaciÃÂ³n",
             "i": "ri-file-list-3-fill",
             "t": "pdf",
             "c": ""
@@ -211,18 +211,18 @@
       },
       {
         "id": "r2",
-        "lbl": "DocumentaciÃ³n de la organizaciÃ³n",
+        "lbl": "DocumentaciÃÂ³n de la organizaciÃÂ³n",
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "PresentaciÃ³n del centro",
+            "l": "PresentaciÃÂ³n del centro",
             "i": "ri-slideshow-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Memoria de gestiÃ³n",
+            "l": "Memoria de gestiÃÂ³n",
             "i": "ri-article-fill",
             "t": "pdf",
             "c": ""
@@ -234,7 +234,7 @@
             "c": ""
           },
           {
-            "l": "Plan estratÃ©gico 2024-28",
+            "l": "Plan estratÃÂ©gico 2024-28",
             "i": "ri-focus-3-fill",
             "t": "web",
             "c": ""
@@ -247,12 +247,12 @@
     "zones": [
       {
         "id": "v1",
-        "lbl": "Visita 1 Â· 3 de noviembre",
+        "lbl": "Visita 1 ÃÂ· 3 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "Programa del dÃ­a",
+            "l": "Programa del dÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -270,7 +270,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃ³n",
+            "l": "Notas de sesiÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -279,12 +279,12 @@
       },
       {
         "id": "v2",
-        "lbl": "Visita 2 Â· 4 de noviembre",
+        "lbl": "Visita 2 ÃÂ· 4 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "zg",
         "tiles": [
           {
-            "l": "Programa del dÃ­a",
+            "l": "Programa del dÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -302,7 +302,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃ³n",
+            "l": "Notas de sesiÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -311,12 +311,12 @@
       },
       {
         "id": "v3",
-        "lbl": "Visita 3 Â· 10 de noviembre",
+        "lbl": "Visita 3 ÃÂ· 10 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "za",
         "tiles": [
           {
-            "l": "Programa del dÃ­a",
+            "l": "Programa del dÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -334,7 +334,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃ³n",
+            "l": "Notas de sesiÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -347,7 +347,7 @@
     "zones": [
       {
         "id": "d1",
-        "lbl": "DocumentaciÃ³n general",
+        "lbl": "DocumentaciÃÂ³n general",
         "icon": "ri-folder-3-fill",
         "col": "zb",
         "tiles": [
@@ -364,7 +364,7 @@
             "c": ""
           },
           {
-            "l": "AutoevaluaciÃ³n",
+            "l": "AutoevaluaciÃÂ³n",
             "i": "ri-checkbox-multiple-fill",
             "t": "web",
             "c": ""
@@ -378,13 +378,13 @@
         "col": "zp",
         "tiles": [
           {
-            "l": "Plan estratÃ©gico",
+            "l": "Plan estratÃÂ©gico",
             "i": "ri-focus-3-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "LÃ­neas estratÃ©gicas",
+            "l": "LÃÂ­neas estratÃÂ©gicas",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -404,7 +404,7 @@
         "col": "zr",
         "tiles": [
           {
-            "l": "SatisfacciÃ³n familias",
+            "l": "SatisfacciÃÂ³n familias",
             "i": "ri-heart-fill",
             "t": "web",
             "c": ""
@@ -416,7 +416,7 @@
             "c": ""
           },
           {
-            "l": "GestiÃ³n de quejas",
+            "l": "GestiÃÂ³n de quejas",
             "i": "ri-file-fill",
             "t": "txt",
             "c": ""
@@ -436,13 +436,13 @@
             "c": ""
           },
           {
-            "l": "FormaciÃ³n continua",
+            "l": "FormaciÃÂ³n continua",
             "i": "ri-award-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "EvaluaciÃ³n desempeÃ±o",
+            "l": "EvaluaciÃÂ³n desempeÃÂ±o",
             "i": "ri-star-fill",
             "t": "web",
             "c": ""
@@ -477,24 +477,24 @@
       },
       {
         "id": "d6",
-        "lbl": "InnovaciÃ³n",
+        "lbl": "InnovaciÃÂ³n",
         "icon": "ri-lightbulb-flash-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "Proyectos innovaciÃ³n",
+            "l": "Proyectos innovaciÃÂ³n",
             "i": "ri-lightbulb-flash-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Apps pedagÃ³gicas",
+            "l": "Apps pedagÃÂ³gicas",
             "i": "ri-smartphone-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "RobÃ³tica educativa",
+            "l": "RobÃÂ³tica educativa",
             "i": "ri-robot-fill",
             "t": "web",
             "c": ""
@@ -520,7 +520,7 @@
             "c": ""
           },
           {
-            "l": "EvoluciÃ³n resultados",
+            "l": "EvoluciÃÂ³n resultados",
             "i": "ri-pie-chart-fill",
             "t": "web",
             "c": ""
