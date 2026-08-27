@@ -171,25 +171,41 @@
             "l": "Web del centro",
             "i": "ri-global-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Web",
+            "les": "Web",
+            "ceu": "https://www.elavemaria.eus/eu",
+            "ces": "https://www.elavemaria.eus/es"
           },
           {
             "l": "Instagram",
             "i": "ri-instagram-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Instagram",
+            "les": "Instagram",
+            "ceu": "https://www.instagram.com/elavemariaikastetxeabilbao/?hl=es",
+            "ces": "https://www.instagram.com/elavemariaikastetxeabilbao/?hl=es"
           },
           {
             "l": "Facebook",
             "i": "ri-facebook-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Facebook",
+            "les": "Facebook",
+            "ceu": "https://www.facebook.com/ElAveMariaIkastetxea",
+            "ces": "https://www.facebook.com/ElAveMariaIkastetxea"
           },
           {
             "l": "Correo contacto",
             "i": "ri-mail-fill",
-            "t": "txt",
-            "c": ""
+            "t": "web",
+            "c": "",
+            "leu": "Kontaktua",
+            "les": "Contacto",
+            "ceu": "https://www.elavemaria.eus/eu/aurre-matrikula-eta-kontaktua/kontaktua-kexak-eta-iradokizunak",
+            "ces": "https://www.elavemaria.eus/es/prematricula-y-contacto/contacto-quejas-y-sugerencias"
           }
         ]
       }
