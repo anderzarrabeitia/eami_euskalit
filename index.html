@@ -328,7 +328,7 @@ html,body{min-height:100%;font-family:'Segoe UI',system-ui,sans-serif;background
 const GH_USER  = 'anderzarrabeitia';
 const GH_REPO  = 'eami_euskalit';
 const GH_FILE  = 'data.json';
-const GH_TOKEN = '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';
+const GH_TOKEN = null; // se introduce por el usuario al editar, guardado en localStorage
 const PW_ACCESS = 'ongietorri';
 const PW_EDIT   = 'urrezkoA';
 const GH_API    = `https://api.github.com/repos/${GH_USER}/${GH_REPO}/contents/${GH_FILE}`;
@@ -521,7 +521,7 @@ function tryAccess(){
 // ── GITHUB ──
 async function loadFromGitHub(){
   try{
-    const r = await fetch(GH_API,{headers:{'Authorization':'token '+GH_TOKEN,'Accept':'application/vnd.github.v3+json'}});
+    const r = await fetch(GH_API,{headers:{'Accept':'application/vnd.github.v3+json'}});
     if(!r.ok) return buildAll();
     const json = await r.json();
     ghSha = json.sha;
@@ -532,6 +532,11 @@ async function loadFromGitHub(){
 }
 
 async function saveToGitHub(){
+  const tok = getToken();
+  if(!tok){
+    alert(lang==='eu'?'Ez dago tokenik gordeta. Irten eta sartu berriro.':'No hay token guardado. Sal del modo edición y vuelve a entrar.');
+    return;
+  }
   const btn = document.getElementById('btn-save-global');
   btn.classList.add('saving');
   btn.querySelector('span').textContent = lang==='eu'?'Gordetzen…':'Guardando…';
@@ -539,17 +544,20 @@ async function saveToGitHub(){
   const body = {message:'EUSKALIT update '+new Date().toLocaleString('es-ES'),content};
   if(ghSha) body.sha = ghSha;
   try{
-    const r = await fetch(GH_API,{method:'PUT',headers:{'Authorization':'token '+GH_TOKEN,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},body:JSON.stringify(body)});
+    const r = await fetch(GH_API,{method:'PUT',headers:{'Authorization':'token '+tok,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},body:JSON.stringify(body)});
     const json = await r.json();
     if(r.ok){
       ghSha = json.content.sha;
       btn.querySelector('span').textContent = lang==='eu'?'✓ Gordeta':'✓ Guardado';
       setTimeout(()=>{btn.classList.remove('saving');btn.querySelector('span').textContent=lang==='eu'?'Aldaketak gorde':'Guardar cambios';},2500);
-    } else throw new Error(json.message);
+    } else {
+      if(r.status===401){ localStorage.removeItem('eami_gh_token'); }
+      throw new Error(json.message);
+    }
   } catch(e){
-    btn.querySelector('span').textContent='Error';
+    btn.querySelector('span').textContent='Error: '+e.message;
     btn.classList.remove('saving');
-    setTimeout(()=>{btn.querySelector('span').textContent=lang==='eu'?'Aldaketak gorde':'Guardar cambios';},3000);
+    setTimeout(()=>{btn.querySelector('span').textContent=lang==='eu'?'Aldaketak gorde':'Guardar cambios';},4000);
   }
 }
 
@@ -557,24 +565,47 @@ async function saveToGitHub(){
 function handleEditToggle(){
   if(!editMode){ showPwModal(); } else { exitEditMode(); }
 }
+function getToken(){ return localStorage.getItem('eami_gh_token')||null; }
+function setToken(t){ localStorage.setItem('eami_gh_token',t); }
+
 function showPwModal(){
   document.querySelectorAll('.pw-bg').forEach(x=>x.remove());
+  const hasToken = !!getToken();
   const bg=document.createElement('div'); bg.className='pw-bg';
   bg.innerHTML=`<div class="pw-box">
     <h2>${lang==='eu'?'Edizio modua':'Modo edición'}</h2>
     <p>${lang==='eu'?'Aldaketak egiteko pasahitza sartu':'Introduce la contraseña para editar'}</p>
     <input type="password" id="pw-i" placeholder="••••••••" autocomplete="off">
+    ${!hasToken?`
+    <p style="font-size:10px;color:var(--tx2);margin-top:2px">${lang==='eu'?'GitHub tokena (behin bakarrik)':'Token de GitHub (solo la primera vez)'}</p>
+    <input type="password" id="pw-token" placeholder="ghp_..." autocomplete="off" style="letter-spacing:0">
+    `:''}
     <div class="pw-err" id="pw-e">${lang==='eu'?'Pasahitz okerra':'Contraseña incorrecta'}</div>
     <div class="pw-btns">
       <button class="pw-cancel" id="pw-c">${lang==='eu'?'Utzi':'Cancelar'}</button>
       <button class="pw-ok" id="pw-ok"><i class="ri-check-fill"></i> ${lang==='eu'?'Sartu':'Entrar'}</button>
     </div>
+    ${hasToken?`<div style="font-size:9px;color:var(--tx3);text-align:center;cursor:pointer" id="pw-reset">🔄 ${lang==='eu'?'Tokena aldatu':'Cambiar token'}</div>`:''}
   </div>`;
   document.getElementById('mroot').appendChild(bg);
   const inp=bg.querySelector('#pw-i'); inp.focus();
+
+  if(hasToken && bg.querySelector('#pw-reset')){
+    bg.querySelector('#pw-reset').onclick=()=>{ localStorage.removeItem('eami_gh_token'); bg.remove(); showPwModal(); };
+  }
+
   function tryPw(){
-    if(inp.value===PW_EDIT){ bg.remove(); enterEditMode(); }
-    else { bg.querySelector('#pw-e').classList.add('show'); inp.value=''; inp.focus(); }
+    if(inp.value===PW_EDIT){
+      const tokenEl=bg.querySelector('#pw-token');
+      if(tokenEl){
+        const tok=tokenEl.value.trim();
+        if(!tok){ tokenEl.style.borderColor='var(--rd)'; tokenEl.focus(); return; }
+        setToken(tok);
+      }
+      bg.remove(); enterEditMode();
+    } else {
+      bg.querySelector('#pw-e').classList.add('show'); inp.value=''; inp.focus();
+    }
   }
   bg.querySelector('#pw-ok').onclick=tryPw;
   bg.querySelector('#pw-c').onclick=()=>bg.remove();
