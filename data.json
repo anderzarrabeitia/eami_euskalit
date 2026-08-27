@@ -55,13 +55,21 @@
             "l": "Mapa de acceso",
             "i": "ri-map-2-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Sarbide mapa",
+            "les": "Mapa de acceso",
+            "ceu": "https://www.elavemaria.eus/eu/aurre-matrikula-eta-kontaktua/non-gaude",
+            "ces": "https://www.elavemaria.eus/es/prematricula-y-contacto/donde-estamos"
           },
           {
             "l": "Transporte pÃÂºblico",
             "i": "ri-bus-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Garraio publikoa",
+            "les": "Transporte público",
+            "ceu": "https://docs.google.com/document/d/1er__a9aDCG46dUWJZxiPO1s9aONntXzCDnRVdmCQXZQ/edit?tab=t.0",
+            "ces": "https://docs.google.com/document/d/1Tk0OP60yxUCDYXKf2YbcfyTC8ezumMiH6y8I-w6d_Ys/edit?tab=t.0"
           },
           {
             "l": "Aparcamiento",
