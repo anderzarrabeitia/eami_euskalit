@@ -106,8 +106,12 @@
           {
             "l": "Organigrama",
             "i": "ri-mind-map",
-            "t": "web",
-            "c": ""
+            "t": "img",
+            "c": "",
+            "leu": "Organigrama",
+            "les": "Organigrama",
+            "ceu": "",
+            "ces": "https://drive.google.com/drive/search?q=organigrama"
           },
           {
             "l": "Equipo directivo",
@@ -145,7 +149,11 @@
             "l": "Horarios",
             "i": "ri-calendar-event-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Ordutegia",
+            "les": "Horario",
+            "ceu": "",
+            "ces": ""
           },
           {
             "l": "Servicios complementarios",
