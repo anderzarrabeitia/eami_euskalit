@@ -3,7 +3,7 @@
     "zones": [
       {
         "id": "l1",
-        "lbl": "El Ave MarÃÂ­a ÃÂ· Instalaciones",
+        "lbl": "El Ave MarÃÂÃÂ­a ÃÂÃÂ· Instalaciones",
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
@@ -33,7 +33,7 @@
             "t": "web",
             "c": "",
             "leu": "Non gaude?",
-            "les": "DÃ³nde estamos",
+            "les": "DÃÂ³nde estamos",
             "ceu": "",
             "ces": "https://www.elavemaria.eus/es/prematricula-y-contacto/donde-estamos"
           },
@@ -51,7 +51,7 @@
       },
       {
         "id": "l2",
-        "lbl": "CÃÂ³mo llegar",
+        "lbl": "CÃÂÃÂ³mo llegar",
         "icon": "ri-map-pin-2-fill",
         "col": "zg",
         "tiles": [
@@ -66,12 +66,12 @@
             "ces": "https://www.elavemaria.eus/es/prematricula-y-contacto/donde-estamos"
           },
           {
-            "l": "Transporte pÃÂºblico",
+            "l": "Transporte pÃÂÃÂºblico",
             "i": "ri-bus-fill",
             "t": "web",
             "c": "",
             "leu": "Garraio publikoa",
-            "les": "Transporte público",
+            "les": "Transporte pÃºblico",
             "ceu": "https://docs.google.com/document/d/1er__a9aDCG46dUWJZxiPO1s9aONntXzCDnRVdmCQXZQ/edit?tab=t.0",
             "ces": "https://docs.google.com/document/d/1Tk0OP60yxUCDYXKf2YbcfyTC8ezumMiH6y8I-w6d_Ys/edit?tab=t.0"
           },
@@ -93,7 +93,7 @@
             "leu": "Oinez argibideak",
             "les": "Direcciones andando",
             "ceu": "Bilbotik oinez etortzeko, Santutxura joan eta Zabalbide kaletik igo Arabellarako noranzkoan. Behin Zabalbidera iritsita, aldapa 116 zenbakiraino igotzen jarraitu besterik ez da egin behar. Ave Maria zebrabide baten atzean dago, Arabella inguruan.",
-            "ces": "Para venir andando desde Bilbao, hay que ir hacia Santutxu y subir por la calle Zabalbide en dirección a Arabella. Una vez en Zabalbide, simplemente hay que seguir subiendo la cuesta hasta el número 116. El Ave María está arriba tras un paso de cebra, en la zona de Arabella."
+            "ces": "Para venir andando desde Bilbao, hay que ir hacia Santutxu y subir por la calle Zabalbide en direcciÃ³n a Arabella. Una vez en Zabalbide, simplemente hay que seguir subiendo la cuesta hasta el nÃºmero 116. El Ave MarÃ­a estÃ¡ arriba tras un paso de cebra, en la zona de Arabella."
           }
         ]
       },
@@ -130,7 +130,7 @@
             "c": ""
           },
           {
-            "l": "RelaciÃÂ³n personal",
+            "l": "RelaciÃÂÃÂ³n personal",
             "i": "ri-contacts-fill",
             "t": "web",
             "c": ""
@@ -166,7 +166,7 @@
             "c": ""
           },
           {
-            "l": "Proyecto trilingÃÂ¼e",
+            "l": "Proyecto trilingÃÂÃÂ¼e",
             "i": "ri-global-fill",
             "t": "web",
             "c": ""
@@ -232,13 +232,13 @@
         "col": "zg",
         "tiles": [
           {
-            "l": "Convocatoria reuniÃÂ³n",
+            "l": "Convocatoria reuniÃÂÃÂ³n",
             "i": "ri-calendar-event-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Protocolo evaluaciÃÂ³n",
+            "l": "Protocolo evaluaciÃÂÃÂ³n",
             "i": "ri-file-list-3-fill",
             "t": "pdf",
             "c": ""
@@ -259,18 +259,18 @@
       },
       {
         "id": "r2",
-        "lbl": "DocumentaciÃÂ³n de la organizaciÃÂ³n",
+        "lbl": "DocumentaciÃÂÃÂ³n de la organizaciÃÂÃÂ³n",
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "PresentaciÃÂ³n del centro",
+            "l": "PresentaciÃÂÃÂ³n del centro",
             "i": "ri-slideshow-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Memoria de gestiÃÂ³n",
+            "l": "Memoria de gestiÃÂÃÂ³n",
             "i": "ri-article-fill",
             "t": "pdf",
             "c": ""
@@ -282,7 +282,7 @@
             "c": ""
           },
           {
-            "l": "Plan estratÃÂ©gico 2024-28",
+            "l": "Plan estratÃÂÃÂ©gico 2024-28",
             "i": "ri-focus-3-fill",
             "t": "web",
             "c": ""
@@ -295,12 +295,12 @@
     "zones": [
       {
         "id": "v1",
-        "lbl": "Visita 1 ÃÂ· 3 de noviembre",
+        "lbl": "Visita 1 ÃÂÃÂ· 3 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "Programa del dÃÂ­a",
+            "l": "Programa del dÃÂÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -318,7 +318,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃÂ³n",
+            "l": "Notas de sesiÃÂÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -327,12 +327,12 @@
       },
       {
         "id": "v2",
-        "lbl": "Visita 2 ÃÂ· 4 de noviembre",
+        "lbl": "Visita 2 ÃÂÃÂ· 4 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "zg",
         "tiles": [
           {
-            "l": "Programa del dÃÂ­a",
+            "l": "Programa del dÃÂÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -350,7 +350,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃÂ³n",
+            "l": "Notas de sesiÃÂÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -359,12 +359,12 @@
       },
       {
         "id": "v3",
-        "lbl": "Visita 3 ÃÂ· 10 de noviembre",
+        "lbl": "Visita 3 ÃÂÃÂ· 10 de noviembre",
         "icon": "ri-calendar-event-fill",
         "col": "za",
         "tiles": [
           {
-            "l": "Programa del dÃÂ­a",
+            "l": "Programa del dÃÂÃÂ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -382,7 +382,7 @@
             "c": ""
           },
           {
-            "l": "Notas de sesiÃÂ³n",
+            "l": "Notas de sesiÃÂÃÂ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "c": ""
@@ -395,7 +395,7 @@
     "zones": [
       {
         "id": "d1",
-        "lbl": "DocumentaciÃÂ³n general",
+        "lbl": "DocumentaciÃÂÃÂ³n general",
         "icon": "ri-folder-3-fill",
         "col": "zb",
         "tiles": [
@@ -412,7 +412,7 @@
             "c": ""
           },
           {
-            "l": "AutoevaluaciÃÂ³n",
+            "l": "AutoevaluaciÃÂÃÂ³n",
             "i": "ri-checkbox-multiple-fill",
             "t": "web",
             "c": ""
@@ -426,13 +426,13 @@
         "col": "zp",
         "tiles": [
           {
-            "l": "Plan estratÃÂ©gico",
+            "l": "Plan estratÃÂÃÂ©gico",
             "i": "ri-focus-3-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "LÃÂ­neas estratÃÂ©gicas",
+            "l": "LÃÂÃÂ­neas estratÃÂÃÂ©gicas",
             "i": "ri-list-check-3",
             "t": "txt",
             "c": ""
@@ -452,7 +452,7 @@
         "col": "zr",
         "tiles": [
           {
-            "l": "SatisfacciÃÂ³n familias",
+            "l": "SatisfacciÃÂÃÂ³n familias",
             "i": "ri-heart-fill",
             "t": "web",
             "c": ""
@@ -464,7 +464,7 @@
             "c": ""
           },
           {
-            "l": "GestiÃÂ³n de quejas",
+            "l": "GestiÃÂÃÂ³n de quejas",
             "i": "ri-file-fill",
             "t": "txt",
             "c": ""
@@ -484,13 +484,13 @@
             "c": ""
           },
           {
-            "l": "FormaciÃÂ³n continua",
+            "l": "FormaciÃÂÃÂ³n continua",
             "i": "ri-award-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "EvaluaciÃÂ³n desempeÃÂ±o",
+            "l": "EvaluaciÃÂÃÂ³n desempeÃÂÃÂ±o",
             "i": "ri-star-fill",
             "t": "web",
             "c": ""
@@ -525,24 +525,24 @@
       },
       {
         "id": "d6",
-        "lbl": "InnovaciÃÂ³n",
+        "lbl": "InnovaciÃÂÃÂ³n",
         "icon": "ri-lightbulb-flash-fill",
         "col": "zb",
         "tiles": [
           {
-            "l": "Proyectos innovaciÃÂ³n",
+            "l": "Proyectos innovaciÃÂÃÂ³n",
             "i": "ri-lightbulb-flash-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "Apps pedagÃÂ³gicas",
+            "l": "Apps pedagÃÂÃÂ³gicas",
             "i": "ri-smartphone-fill",
             "t": "web",
             "c": ""
           },
           {
-            "l": "RobÃÂ³tica educativa",
+            "l": "RobÃÂÃÂ³tica educativa",
             "i": "ri-robot-fill",
             "t": "web",
             "c": ""
@@ -568,7 +568,7 @@
             "c": ""
           },
           {
-            "l": "EvoluciÃÂ³n resultados",
+            "l": "EvoluciÃÂÃÂ³n resultados",
             "i": "ri-pie-chart-fill",
             "t": "web",
             "c": ""
