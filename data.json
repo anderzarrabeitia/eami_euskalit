@@ -33,8 +33,8 @@
             "t": "web",
             "c": "",
             "leu": "Non gaude?",
-            "les": "DÃÂÃÂ³nde estamos",
-            "ceu": "",
+            "les": "¿Donde estamos?",
+            "ceu": "https://www.elavemaria.eus/eu/aurre-matrikula-eta-kontaktua/non-gaude",
             "ces": "https://www.elavemaria.eus/es/prematricula-y-contacto/donde-estamos"
           },
           {
@@ -71,7 +71,7 @@
             "t": "web",
             "c": "",
             "leu": "Garraio publikoa",
-            "les": "Transporte pÃÂºblico",
+            "les": "Transporte público",
             "ceu": "https://docs.google.com/document/d/1er__a9aDCG46dUWJZxiPO1s9aONntXzCDnRVdmCQXZQ/edit?tab=t.0",
             "ces": "https://docs.google.com/document/d/1Tk0OP60yxUCDYXKf2YbcfyTC8ezumMiH6y8I-w6d_Ys/edit?tab=t.0"
           },
@@ -175,7 +175,11 @@
             "l": "Servicios complementarios",
             "i": "ri-tools-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Instalazioak",
+            "les": "Instalaciones",
+            "ceu": "https://docs.google.com/document/d/1NeOqSLpCPwLBEhQIPsc1MKCZ6cvvtdkFbdYEUL4Nvec/edit?tab=t.0",
+            "ces": "https://docs.google.com/document/d/19aafhbAivvZE6iRTrCx3Mnu5EKe4Ca4eeO66D5r3_jw/edit?tab=t.0"
           },
           {
             "l": "Proyecto trilingÃÂÃÂÃÂÃÂ¼e",
@@ -184,8 +188,8 @@
             "c": "",
             "leu": "Hizkuntza Eskaintza",
             "les": "Oferta Lingüística",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://docs.google.com/document/d/1mMIEjm_DtNXgn_AMs6H2bNHzaTs1XaqUvC-_gSZ0DT8/edit?tab=t.0",
+            "ces": "https://docs.google.com/document/d/1G3QxLtc1DgwHJopw9qKD9EQNwR8gKBeMhSKNfej84EU/edit?tab=t.0"
           }
         ]
       },
