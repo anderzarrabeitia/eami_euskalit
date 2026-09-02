@@ -93,7 +93,7 @@
             "leu": "Oinez argibideak",
             "les": "Direcciones andando",
             "ceu": "Bilbotik oinez etortzeko, Santutxura joan eta Zabalbide kaletik igo Arabellarako noranzkoan. Behin Zabalbidera iritsita, aldapa 116 zenbakiraino igotzen jarraitu besterik ez da egin behar. Ave Maria zebrabide baten atzean dago, Arabella inguruan.",
-            "ces": "Para venir andando desde Bilbao, hay que ir hacia Santutxu y subir por la calle Zabalbide en direcciÃÂ³n a Arabella. Una vez en Zabalbide, simplemente hay que seguir subiendo la cuesta hasta el nÃÂºmero 116. El Ave MarÃÂ­a estÃÂ¡ arriba tras un paso de cebra, en la zona de Arabella."
+            "ces": "Para venir andando desde Bilbao, hay que ir hacia Santutxu y subir por la calle Zabalbide en dirección a Arabella. Una vez en Zabalbide, simplemente hay que seguir subiendo la cuesta hasta el número 116. El Ave María está arriba tras un paso de cebra, en la zona de Arabella."
           }
         ]
       },
@@ -128,16 +128,20 @@
             "i": "ri-user-star-fill",
             "t": "web",
             "c": "",
-            "leu": "Irakaslegoa",
-            "les": "Profesorado",
-            "ceu": "https://docs.google.com/document/d/1kAiAwDLRfb1KiijkxhM6yGBo1uZ1LaAezOWFzLypfEk/edit?tab=t.0",
-            "ces": "https://docs.google.com/document/d/13onGGbDttAZL9yI24gDDbE7nfSORfOneBsyDg5EUDRw/edit?tab=t.0"
+            "leu": "?",
+            "les": "?",
+            "ceu": "",
+            "ces": ""
           },
           {
             "l": "RelaciÃÂÃÂÃÂÃÂ³n personal",
             "i": "ri-contacts-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Irakaslegoa",
+            "les": "Profesorado",
+            "ceu": "https://docs.google.com/document/d/1kAiAwDLRfb1KiijkxhM6yGBo1uZ1LaAezOWFzLypfEk/edit?tab=t.0",
+            "ces": "https://docs.google.com/document/d/13onGGbDttAZL9yI24gDDbE7nfSORfOneBsyDg5EUDRw/edit?tab=t.0"
           }
         ]
       },
@@ -151,7 +155,11 @@
             "l": "Oferta educativa",
             "i": "ri-book-open-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Zerbitzuak",
+            "les": "Servicios",
+            "ceu": "",
+            "ces": ""
           },
           {
             "l": "Horarios",
@@ -173,7 +181,11 @@
             "l": "Proyecto trilingÃÂÃÂÃÂÃÂ¼e",
             "i": "ri-global-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Hizkuntza Eskaintza",
+            "les": "Oferta Lingüística",
+            "ceu": "",
+            "ces": ""
           }
         ]
       },
