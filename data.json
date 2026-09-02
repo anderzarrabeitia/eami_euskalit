@@ -579,7 +579,11 @@
             "l": "Cuadro de mando",
             "i": "ri-bar-chart-fill",
             "t": "web",
-            "c": ""
+            "c": "",
+            "leu": "Adierazleak",
+            "les": "Resultados",
+            "ceu": "",
+            "ces": "https://docs.google.com/spreadsheets/d/1CnHClF6DRVErf2cdOKN-atgCHt6JrdODHfD7ePahmxU/edit?gid=1662636994#gid=1662636994"
           },
           {
             "l": "KPIs clave",
