@@ -154,6 +154,22 @@
             "t": "web",
             "ceu": "",
             "ces": ""
+          },
+          {
+            "leu": "Jantoki zerbitzua",
+            "les": "Servicio de comedor",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/1mg15IBJQa25ueaSdp5cr5acFtKJ3Adsy/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/16dN9fi18_czukoUSlb0gwls5q5jlmACo/view?usp=drive_link"
+          },
+          {
+            "leu": "Harrera-Zerbitzua",
+            "les": "Servicio de acogida",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/1dabNtP3GUxoUOWsTCRMUnohpxodtgtSA/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1lA7UK3dxDXQ31Q_oVAnuC4J9kkF39pOQ/view?usp=drive_link"
           }
         ]
       },
