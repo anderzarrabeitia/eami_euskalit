@@ -7,12 +7,12 @@
         "col": "zb",
         "tiles": [
           {
-            "leu": "Ikastetxearen fitxa",
-            "les": "Ficha del centro",
-            "i": "ri-file-text-fill",
+            "leu": "Ikastetxeko web",
+            "les": "Web del colegio",
+            "i": "ri-puzzle-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://www.elavemaria.eus/eu",
+            "ces": "https://www.elavemaria.eus/es"
           },
           {
             "leu": "Bisita virtual",
