@@ -55,7 +55,7 @@
           },
           {
             "leu": "Garraio publikoa",
-            "les": "Transporte público",
+            "les": "Transporte pÃºblico",
             "i": "ri-bus-fill",
             "t": "web",
             "ceu": "",
@@ -89,16 +89,16 @@
             "les": "Organigrama",
             "i": "ri-mind-map",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link"
           },
           {
             "leu": "Zuzendaritza taldea",
             "les": "Equipo directivo",
             "i": "ri-vip-crown-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://docs.google.com/document/d/1apnWmI9F9VCThsSdvAGw7j7I--y_gyUbzjbny-bPGRE/edit?usp=drive_link",
+            "ces": "https://docs.google.com/document/d/1ZlSNoSZt0CEuljtyBRWDFOL0pa57pmocADu1FIjyUmE/edit?usp=drive_link"
           },
           {
             "leu": "Prozesu-arduradunak",
@@ -110,7 +110,7 @@
           },
           {
             "leu": "Langileen zerrenda",
-            "les": "Relación personal",
+            "les": "RelaciÃ³n personal",
             "i": "ri-contacts-fill",
             "t": "web",
             "ceu": "",
@@ -149,7 +149,7 @@
           },
           {
             "leu": "Proiektu eleaniztuna",
-            "les": "Proyecto trilingüe",
+            "les": "Proyecto trilingÃ¼e",
             "i": "ri-global-fill",
             "t": "web",
             "ceu": "",
@@ -223,7 +223,7 @@
         "tiles": [
           {
             "leu": "Bilera deia",
-            "les": "Convocatoria reunión",
+            "les": "Convocatoria reuniÃ³n",
             "i": "ri-calendar-event-fill",
             "t": "web",
             "ceu": "",
@@ -231,7 +231,7 @@
           },
           {
             "leu": "Ebaluazio protokoloa",
-            "les": "Protocolo evaluación",
+            "les": "Protocolo evaluaciÃ³n",
             "i": "ri-file-list-3-fill",
             "t": "pdf",
             "ceu": "",
@@ -262,7 +262,7 @@
         "tiles": [
           {
             "leu": "Ikastetxearen aurkezpena",
-            "les": "Presentación del centro",
+            "les": "PresentaciÃ³n del centro",
             "i": "ri-slideshow-fill",
             "t": "web",
             "ceu": "",
@@ -270,7 +270,7 @@
           },
           {
             "leu": "Kudeaketa memoria",
-            "les": "Memoria de gestión",
+            "les": "Memoria de gestiÃ³n",
             "i": "ri-article-fill",
             "t": "pdf",
             "ceu": "",
@@ -286,7 +286,7 @@
           },
           {
             "leu": "Plan estrategikoa 2024-28",
-            "les": "Plan estratégico 2024-28",
+            "les": "Plan estratÃ©gico 2024-28",
             "i": "ri-focus-3-fill",
             "t": "web",
             "ceu": "",
@@ -305,7 +305,7 @@
         "tiles": [
           {
             "leu": "Eguneko programa",
-            "les": "Programa del día",
+            "les": "Programa del dÃ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "ceu": "",
@@ -329,7 +329,7 @@
           },
           {
             "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
+            "les": "Notas de sesiÃ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "ceu": "",
@@ -344,7 +344,7 @@
         "tiles": [
           {
             "leu": "Eguneko programa",
-            "les": "Programa del día",
+            "les": "Programa del dÃ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "ceu": "",
@@ -368,7 +368,7 @@
           },
           {
             "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
+            "les": "Notas de sesiÃ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "ceu": "",
@@ -383,7 +383,7 @@
         "tiles": [
           {
             "leu": "Eguneko programa",
-            "les": "Programa del día",
+            "les": "Programa del dÃ­a",
             "i": "ri-list-check-3",
             "t": "txt",
             "ceu": "",
@@ -407,7 +407,7 @@
           },
           {
             "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
+            "les": "Notas de sesiÃ³n",
             "i": "ri-draft-fill",
             "t": "txt",
             "ceu": "",
@@ -442,7 +442,7 @@
           },
           {
             "leu": "Autoebaluazioa",
-            "les": "Autoevaluación",
+            "les": "AutoevaluaciÃ³n",
             "i": "ri-checkbox-multiple-fill",
             "t": "web",
             "ceu": "",
@@ -457,7 +457,7 @@
         "tiles": [
           {
             "leu": "Plan estrategikoa",
-            "les": "Plan estratégico",
+            "les": "Plan estratÃ©gico",
             "i": "ri-focus-3-fill",
             "t": "web",
             "ceu": "",
@@ -465,7 +465,7 @@
           },
           {
             "leu": "Ildo estrategikoak",
-            "les": "Líneas estratégicas",
+            "les": "LÃ­neas estratÃ©gicas",
             "i": "ri-list-check-3",
             "t": "txt",
             "ceu": "",
@@ -488,7 +488,7 @@
         "tiles": [
           {
             "leu": "Familien asebetetzea",
-            "les": "Satisfacción familias",
+            "les": "SatisfacciÃ³n familias",
             "i": "ri-heart-fill",
             "t": "web",
             "ceu": "",
@@ -504,7 +504,7 @@
           },
           {
             "leu": "Kexen kudeaketa",
-            "les": "Gestión de quejas",
+            "les": "GestiÃ³n de quejas",
             "i": "ri-file-fill",
             "t": "txt",
             "ceu": "",
@@ -527,7 +527,7 @@
           },
           {
             "leu": "Etengabeko prestakuntza",
-            "les": "Formación continua",
+            "les": "FormaciÃ³n continua",
             "i": "ri-award-fill",
             "t": "web",
             "ceu": "",
@@ -535,7 +535,7 @@
           },
           {
             "leu": "Errendimendu ebaluazioa",
-            "les": "Evaluación desempeño",
+            "les": "EvaluaciÃ³n desempeÃ±o",
             "i": "ri-star-fill",
             "t": "web",
             "ceu": "",
@@ -581,7 +581,7 @@
         "tiles": [
           {
             "leu": "Berrikuntza proiektuak",
-            "les": "Proyectos innovación",
+            "les": "Proyectos innovaciÃ³n",
             "i": "ri-lightbulb-flash-fill",
             "t": "web",
             "ceu": "",
@@ -589,7 +589,7 @@
           },
           {
             "leu": "App pedagogikoak",
-            "les": "Apps pedagógicas",
+            "les": "Apps pedagÃ³gicas",
             "i": "ri-smartphone-fill",
             "t": "web",
             "ceu": "",
@@ -597,7 +597,7 @@
           },
           {
             "leu": "Robotika hezigarria",
-            "les": "Robótica educativa",
+            "les": "RobÃ³tica educativa",
             "i": "ri-robot-fill",
             "t": "web",
             "ceu": "",
@@ -628,7 +628,7 @@
           },
           {
             "leu": "Emaitzen bilakaera",
-            "les": "Evolución resultados",
+            "les": "EvoluciÃ³n resultados",
             "i": "ri-pie-chart-fill",
             "t": "web",
             "ceu": "",
