@@ -525,7 +525,10 @@ async function loadFromGitHub(){
     if(!r.ok) return buildAll();
     const json = await r.json();
     ghSha = json.sha;
-    ST = JSON.parse(atob(json.content.replace(/\n/g,'')));
+    const b64 = json.content.replace(/\n/g,'');
+    const binStr = atob(b64);
+    const bytes = Uint8Array.from(binStr, c=>c.charCodeAt(0));
+    ST = JSON.parse(new TextDecoder().decode(bytes));
   } catch(e){ console.warn('Defaults used',e); }
   buildAll();
   setLang('eu');
@@ -540,7 +543,10 @@ async function saveToGitHub(){
   const btn = document.getElementById('btn-save-global');
   btn.classList.add('saving');
   btn.querySelector('span').textContent = lang==='eu'?'Gordetzen…':'Guardando…';
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify(ST,null,2))));
+  const json_str = JSON.stringify(ST,null,2);
+  const bytes = new TextEncoder().encode(json_str);
+  const binStr = Array.from(bytes).map(b=>String.fromCharCode(b)).join('');
+  const content = btoa(binStr);
   const body = {message:'EUSKALIT update '+new Date().toLocaleString('es-ES'),content};
   if(ghSha) body.sha = ghSha;
   try{
