@@ -6,38 +6,10 @@
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Ikastetxearen fitxa",
-            "les": "Ficha del centro",
-            "i": "ri-file-text-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Eraikinaren planoa",
-            "les": "Plano del edificio",
-            "i": "ri-map-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Instalazio argazkiak",
-            "les": "Fotos instalaciones",
-            "i": "ri-image-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ikastetxearen historia",
-            "les": "Historia del centro",
-            "i": "ri-book-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Ikastetxearen fitxa", "les": "Ficha del centro", "i": "ri-file-text-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Eraikinaren planoa", "les": "Plano del edificio", "i": "ri-map-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Instalazio argazkiak", "les": "Fotos instalaciones", "i": "ri-image-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Ikastetxearen historia", "les": "Historia del centro", "i": "ri-book-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -45,38 +17,10 @@
         "icon": "ri-map-pin-2-fill",
         "col": "zg",
         "tiles": [
-          {
-            "leu": "Sarbide mapa",
-            "les": "Mapa de acceso",
-            "i": "ri-map-2-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Garraio publikoa",
-            "les": "Transporte pÃºblico",
-            "i": "ri-bus-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aparkalekua",
-            "les": "Aparcamiento",
-            "i": "ri-parking-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Oinez argibideak",
-            "les": "Indicaciones a pie",
-            "i": "ri-walk-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Sarbide mapa", "les": "Mapa de acceso", "i": "ri-map-2-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Garraio publikoa", "les": "Transporte público", "i": "ri-bus-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Aparkalekua", "les": "Aparcamiento", "i": "ri-parking-fill", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Oinez argibideak", "les": "Indicaciones a pie", "i": "ri-walk-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -84,38 +28,10 @@
         "icon": "ri-organization-chart",
         "col": "zp",
         "tiles": [
-          {
-            "leu": "Organigrama",
-            "les": "Organigrama",
-            "i": "ri-mind-map",
-            "t": "web",
-            "ceu": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link",
-            "ces": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link"
-          },
-          {
-            "leu": "Zuzendaritza taldea",
-            "les": "Equipo directivo",
-            "i": "ri-vip-crown-fill",
-            "t": "web",
-            "ceu": "https://docs.google.com/document/d/1apnWmI9F9VCThsSdvAGw7j7I--y_gyUbzjbny-bPGRE/edit?usp=drive_link",
-            "ces": "https://docs.google.com/document/d/1ZlSNoSZt0CEuljtyBRWDFOL0pa57pmocADu1FIjyUmE/edit?usp=drive_link"
-          },
-          {
-            "leu": "Prozesu-arduradunak",
-            "les": "Responsables proceso",
-            "i": "ri-user-star-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Langileen zerrenda",
-            "les": "RelaciÃ³n personal",
-            "i": "ri-contacts-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Organigrama", "les": "Organigrama", "i": "ri-mind-map", "t": "web", "ceu": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link", "ces": "https://drive.google.com/file/d/1bdixp3N9B8h7BP0t9SY6CBlL0b5b-dbv/view?usp=drive_link"},
+          {"leu": "Zuzendaritza taldea", "les": "Equipo directivo", "i": "ri-vip-crown-fill", "t": "web", "ceu": "https://docs.google.com/document/d/1apnWmI9F9VCThsSdvAGw7j7I--y_gyUbzjbny-bPGRE/edit?usp=drive_link", "ces": "https://docs.google.com/document/d/1ZlSNoSZt0CEuljtyBRWDFOL0pa57pmocADu1FIjyUmE/edit?usp=drive_link"},
+          {"leu": "Prozesu-arduradunak", "les": "Responsables proceso", "i": "ri-user-star-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Langileen zerrenda", "les": "Relación personal", "i": "ri-contacts-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -123,38 +39,10 @@
         "icon": "ri-school-fill",
         "col": "za",
         "tiles": [
-          {
-            "leu": "Hezkuntza eskaintza",
-            "les": "Oferta educativa",
-            "i": "ri-book-open-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ordutegiak",
-            "les": "Horarios",
-            "i": "ri-calendar-event-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Zerbitzu osagarriak",
-            "les": "Servicios complementarios",
-            "i": "ri-tools-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Proiektu eleaniztuna",
-            "les": "Proyecto trilingÃ¼e",
-            "i": "ri-global-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Hezkuntza eskaintza", "les": "Oferta educativa", "i": "ri-book-open-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Ordutegiak", "les": "Horarios", "i": "ri-calendar-event-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Zerbitzu osagarriak", "les": "Servicios complementarios", "i": "ri-tools-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Proiektu eleaniztuna", "les": "Proyecto trilingüe", "i": "ri-global-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -162,54 +50,12 @@
         "icon": "ri-global-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Ikastetxearen weba",
-            "les": "Web del centro",
-            "i": "ri-global-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Instagram",
-            "les": "Instagram",
-            "i": "ri-instagram-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Facebook",
-            "les": "Facebook",
-            "i": "ri-facebook-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Harremanetan jarri",
-            "les": "Correo contacto",
-            "i": "ri-mail-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "MaGiA",
-            "les": "MaGiA",
-            "i": "ri-camera-fill",
-            "t": "web",
-            "ceu": "https://drive.google.com/file/d/1L0Kt1EOVQtnNhwehjDHZYuP7CA0BN7kq/view?usp=sharing",
-            "ces": "https://drive.google.com/file/d/1L0Kt1EOVQtnNhwehjDHZYuP7CA0BN7kq/view?usp=sharing"
-          },
-          {
-            "leu": "EAMI ipuina",
-            "les": "EAMI cuento",
-            "i": "ri-camera-fill",
-            "t": "web",
-            "ceu": "https://drive.google.com/file/d/1EHKIa72az-jts7XJPHdFyS3yJg5xQ7LV/view?usp=drive_link",
-            "ces": "https://drive.google.com/file/d/1EHKIa72az-jts7XJPHdFyS3yJg5xQ7LV/view?usp=drive_link"
-          }
+          {"leu": "Ikastetxearen weba", "les": "Web del centro", "i": "ri-global-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Instagram", "les": "Instagram", "i": "ri-instagram-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Facebook", "les": "Facebook", "i": "ri-facebook-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Harremanetan jarri", "les": "Correo contacto", "i": "ri-mail-fill", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "MaGiA", "les": "MaGiA", "i": "ri-camera-fill", "t": "web", "ceu": "https://drive.google.com/file/d/1L0Kt1EOVQtnNhwehjDHZYuP7CA0BN7kq/view?usp=sharing", "ces": "https://drive.google.com/file/d/1L0Kt1EOVQtnNhwehjDHZYuP7CA0BN7kq/view?usp=sharing"},
+          {"leu": "EAMI ipuina", "les": "EAMI cuento", "i": "ri-camera-fill", "t": "web", "ceu": "https://drive.google.com/file/d/1EHKIa72az-jts7XJPHdFyS3yJg5xQ7LV/view?usp=drive_link", "ces": "https://drive.google.com/file/d/1EHKIa72az-jts7XJPHdFyS3yJg5xQ7LV/view?usp=drive_link"}
         ]
       }
     ]
@@ -221,38 +67,10 @@
         "icon": "ri-group-fill",
         "col": "zg",
         "tiles": [
-          {
-            "leu": "Bilera deia",
-            "les": "Convocatoria reuniÃ³n",
-            "i": "ri-calendar-event-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ebaluazio protokoloa",
-            "les": "Protocolo evaluaciÃ³n",
-            "i": "ri-file-list-3-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "EUSKALIT irizpideak",
-            "les": "Criterios EUSKALIT",
-            "i": "ri-checkbox-multiple-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Bisita agenda",
-            "les": "Agenda de la visita",
-            "i": "ri-list-check-3",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Bilera deia", "les": "Convocatoria reunión", "i": "ri-calendar-event-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Ebaluazio protokoloa", "les": "Protocolo evaluación", "i": "ri-file-list-3-fill", "t": "pdf", "ceu": "", "ces": ""},
+          {"leu": "EUSKALIT irizpideak", "les": "Criterios EUSKALIT", "i": "ri-checkbox-multiple-fill", "t": "pdf", "ceu": "", "ces": ""},
+          {"leu": "Bisita agenda", "les": "Agenda de la visita", "i": "ri-list-check-3", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -260,38 +78,10 @@
         "icon": "ri-building-2-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Ikastetxearen aurkezpena",
-            "les": "PresentaciÃ³n del centro",
-            "i": "ri-slideshow-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Kudeaketa memoria",
-            "les": "Memoria de gestiÃ³n",
-            "i": "ri-article-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Prozesuen mapa",
-            "les": "Mapa de procesos",
-            "i": "ri-mind-map",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Plan estrategikoa 2024-28",
-            "les": "Plan estratÃ©gico 2024-28",
-            "i": "ri-focus-3-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Ikastetxearen aurkezpena", "les": "Presentación del centro", "i": "ri-slideshow-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Kudeaketa memoria", "les": "Memoria de gestión", "i": "ri-article-fill", "t": "pdf", "ceu": "", "ces": ""},
+          {"leu": "Prozesuen mapa", "les": "Mapa de procesos", "i": "ri-mind-map", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Plan estrategikoa 2024-28", "les": "Plan estratégico 2024-28", "i": "ri-focus-3-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       }
     ]
@@ -303,38 +93,10 @@
         "icon": "ri-calendar-event-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Eguneko programa",
-            "les": "Programa del dÃ­a",
-            "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesiÃ³n",
-            "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Eguneko programa", "les": "Programa del día", "i": "ri-list-check-3", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Aurreikusitako elkarrizketak", "les": "Entrevistas previstas", "i": "ri-group-fill", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Laguntza dokumentuak", "les": "Documentos de apoyo", "i": "ri-files-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Saioaren oharrak", "les": "Notas de sesión", "i": "ri-draft-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -342,38 +104,10 @@
         "icon": "ri-calendar-event-fill",
         "col": "zg",
         "tiles": [
-          {
-            "leu": "Eguneko programa",
-            "les": "Programa del dÃ­a",
-            "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesiÃ³n",
-            "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Eguneko programa", "les": "Programa del día", "i": "ri-list-check-3", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Aurreikusitako elkarrizketak", "les": "Entrevistas previstas", "i": "ri-group-fill", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Laguntza dokumentuak", "les": "Documentos de apoyo", "i": "ri-files-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Saioaren oharrak", "les": "Notas de sesión", "i": "ri-draft-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -381,38 +115,10 @@
         "icon": "ri-calendar-event-fill",
         "col": "za",
         "tiles": [
-          {
-            "leu": "Eguneko programa",
-            "les": "Programa del dÃ­a",
-            "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesiÃ³n",
-            "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Eguneko programa", "les": "Programa del día", "i": "ri-list-check-3", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Aurreikusitako elkarrizketak", "les": "Entrevistas previstas", "i": "ri-group-fill", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "Laguntza dokumentuak", "les": "Documentos de apoyo", "i": "ri-files-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Saioaren oharrak", "les": "Notas de sesión", "i": "ri-draft-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       }
     ]
@@ -424,30 +130,9 @@
         "icon": "ri-folder-3-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Memoria osoa",
-            "les": "Memoria completa",
-            "i": "ri-article-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ikastetxearen datuak",
-            "les": "Datos del centro",
-            "i": "ri-file-text-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Autoebaluazioa",
-            "les": "AutoevaluaciÃ³n",
-            "i": "ri-checkbox-multiple-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Memoria osoa", "les": "Memoria completa", "i": "ri-article-fill", "t": "pdf", "ceu": "", "ces": ""},
+          {"leu": "Ikastetxearen datuak", "les": "Datos del centro", "i": "ri-file-text-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Autoebaluazioa", "les": "Autoevaluación", "i": "ri-checkbox-multiple-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -455,30 +140,9 @@
         "icon": "ri-focus-3-fill",
         "col": "zp",
         "tiles": [
-          {
-            "leu": "Plan estrategikoa",
-            "les": "Plan estratÃ©gico",
-            "i": "ri-focus-3-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ildo estrategikoak",
-            "les": "LÃ­neas estratÃ©gicas",
-            "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "2024-28 jarraipena",
-            "les": "Seguimiento 2024-28",
-            "i": "ri-bar-chart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Plan estrategikoa", "les": "Plan estratégico", "i": "ri-focus-3-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Ildo estrategikoak", "les": "Líneas estratégicas", "i": "ri-list-check-3", "t": "txt", "ceu": "", "ces": ""},
+          {"leu": "2024-28 jarraipena", "les": "Seguimiento 2024-28", "i": "ri-bar-chart-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -486,30 +150,9 @@
         "icon": "ri-heart-fill",
         "col": "zr",
         "tiles": [
-          {
-            "leu": "Familien asebetetzea",
-            "les": "SatisfacciÃ³n familias",
-            "i": "ri-heart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Ikasleen inkestak",
-            "les": "Encuestas alumnado",
-            "i": "ri-bar-chart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Kexen kudeaketa",
-            "les": "GestiÃ³n de quejas",
-            "i": "ri-file-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Familien asebetetzea", "les": "Satisfacción familias", "i": "ri-heart-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Ikasleen inkestak", "les": "Encuestas alumnado", "i": "ri-bar-chart-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Kexen kudeaketa", "les": "Gestión de quejas", "i": "ri-file-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -517,30 +160,9 @@
         "icon": "ri-group-fill",
         "col": "zg",
         "tiles": [
-          {
-            "leu": "Taldearen ongizatea",
-            "les": "Bienestar equipo",
-            "i": "ri-group-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Etengabeko prestakuntza",
-            "les": "FormaciÃ³n continua",
-            "i": "ri-award-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Errendimendu ebaluazioa",
-            "les": "EvaluaciÃ³n desempeÃ±o",
-            "i": "ri-star-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Taldearen ongizatea", "les": "Bienestar equipo", "i": "ri-group-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Etengabeko prestakuntza", "les": "Formación continua", "i": "ri-award-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Errendimendu ebaluazioa", "les": "Evaluación desempeño", "i": "ri-star-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -548,30 +170,9 @@
         "icon": "ri-global-fill",
         "col": "za",
         "tiles": [
-          {
-            "leu": "SROI",
-            "les": "SROI",
-            "i": "ri-bar-chart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Komunitate proiektuak",
-            "les": "Proyectos comunidad",
-            "i": "ri-global-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Iraunkortasuna",
-            "les": "Sostenibilidad",
-            "i": "ri-flag-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "SROI", "les": "SROI", "i": "ri-bar-chart-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Komunitate proiektuak", "les": "Proyectos comunidad", "i": "ri-global-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Iraunkortasuna", "les": "Sostenibilidad", "i": "ri-flag-fill", "t": "txt", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -579,30 +180,9 @@
         "icon": "ri-lightbulb-flash-fill",
         "col": "zb",
         "tiles": [
-          {
-            "leu": "Berrikuntza proiektuak",
-            "les": "Proyectos innovaciÃ³n",
-            "i": "ri-lightbulb-flash-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "App pedagogikoak",
-            "les": "Apps pedagÃ³gicas",
-            "i": "ri-smartphone-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Robotika hezigarria",
-            "les": "RobÃ³tica educativa",
-            "i": "ri-robot-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Berrikuntza proiektuak", "les": "Proyectos innovación", "i": "ri-lightbulb-flash-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "App pedagogikoak", "les": "Apps pedagógicas", "i": "ri-smartphone-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Robotika hezigarria", "les": "Robótica educativa", "i": "ri-robot-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       },
       {
@@ -610,30 +190,9 @@
         "icon": "ri-bar-chart-fill",
         "col": "zp",
         "tiles": [
-          {
-            "leu": "Aginte-koadroa",
-            "les": "Cuadro de mando",
-            "i": "ri-bar-chart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "KPI nagusiak",
-            "les": "KPIs clave",
-            "i": "ri-focus-3-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Emaitzen bilakaera",
-            "les": "EvoluciÃ³n resultados",
-            "i": "ri-pie-chart-fill",
-            "t": "web",
-            "ceu": "",
-            "ces": ""
-          }
+          {"leu": "Aginte-koadroa", "les": "Cuadro de mando", "i": "ri-bar-chart-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "KPI nagusiak", "les": "KPIs clave", "i": "ri-focus-3-fill", "t": "web", "ceu": "", "ces": ""},
+          {"leu": "Emaitzen bilakaera", "les": "Evolución resultados", "i": "ri-pie-chart-fill", "t": "web", "ceu": "", "ces": ""}
         ]
       }
     ]
