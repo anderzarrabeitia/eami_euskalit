@@ -15,20 +15,20 @@
             "ces": ""
           },
           {
-            "leu": "Eraikinaren planoa",
-            "les": "Plano del edificio",
+            "leu": "Bisita virtual",
+            "les": "Visita virtual",
             "i": "ri-map-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://tourmkr.com/F1iuicKliz/39880558p&90.07h&87.25t",
+            "ces": "https://tourmkr.com/F1iuicKliz/39880558p&90.07h&87.25t"
           },
           {
-            "leu": "Instalazio argazkiak",
-            "les": "Fotos instalaciones",
+            "leu": "Instalazioak",
+            "les": "Instalaciones",
             "i": "ri-image-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1he-8telOyVRIohwI5-eQ_d-65wMXeXBv/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/14y9Jbal9DeIAfcZRETKVYzQ0-zr1E7Js/view?usp=drive_link"
           },
           {
             "leu": "Ikastetxearen historia",
@@ -136,16 +136,16 @@
             "les": "Horarios",
             "i": "ri-calendar-event-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1O4pel66R12vlMW9ht8BYidtuRdKbm-Qp/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1-y5-5BmJ3D5eu9EA_yqbO1e3qnjc80AE/view?usp=drive_link"
           },
           {
-            "leu": "Zerbitzu osagarriak",
-            "les": "Servicios complementarios",
+            "leu": "Eskolaz kanpoko jarduerak",
+            "les": "Actividades extraescolares",
             "i": "ri-tools-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1O4pel66R12vlMW9ht8BYidtuRdKbm-Qp/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1FU_jim9oagkN9JRE6lN2T4KcphADjvvj/view?usp=drive_link"
           },
           {
             "leu": "Proiektu eleaniztuna",
