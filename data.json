@@ -46,6 +46,14 @@
             "les": "Historia del centro",
             "ceu": "https://www.elavemaria.eus/eu/zentroa/historiako-100-urte",
             "ces": "https://www.elavemaria.eus/es/el-centro/cien-anos-de-historia"
+          },
+          {
+            "leu": "Instalaciones",
+            "les": "Instalazioak",
+            "i": "ri-tools-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
           }
         ]
       },
