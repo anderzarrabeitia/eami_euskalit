@@ -7,14 +7,6 @@
         "col": "zb",
         "tiles": [
           {
-            "leu": "Ikastetxeko web",
-            "les": "Web del colegio",
-            "i": "ri-puzzle-fill",
-            "t": "web",
-            "ceu": "https://www.elavemaria.eus/eu",
-            "ces": "https://www.elavemaria.eus/es"
-          },
-          {
             "leu": "Bisita virtual",
             "les": "Visita virtual",
             "i": "ri-map-fill",
@@ -183,24 +175,24 @@
             "les": "Web del centro",
             "i": "ri-global-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://www.elavemaria.eus/eu",
+            "ces": "https://www.elavemaria.eus/es"
           },
           {
             "leu": "Instagram",
             "les": "Instagram",
             "i": "ri-instagram-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://www.instagram.com/elavemariaikastetxeabilbao/?hl=es",
+            "ces": "https://www.instagram.com/elavemariaikastetxeabilbao/?hl=es"
           },
           {
             "leu": "Facebook",
             "les": "Facebook",
             "i": "ri-facebook-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://www.facebook.com/ElAveMariaIkastetxea/?locale=es_ES",
+            "ces": "https://www.facebook.com/ElAveMariaIkastetxea/?locale=es_ES"
           },
           {
             "leu": "Harremanetan jarri",
