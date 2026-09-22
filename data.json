@@ -230,22 +230,6 @@
         "col": "zg",
         "tiles": [
           {
-            "leu": "Ebaluazio protokoloa",
-            "les": "Protocolo evaluación",
-            "i": "ri-file-list-3-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "EUSKALIT irizpideak",
-            "les": "Criterios EUSKALIT",
-            "i": "ri-checkbox-multiple-fill",
-            "t": "pdf",
-            "ceu": "",
-            "ces": ""
-          },
-          {
             "leu": "Bisita agenda",
             "les": "Agenda de la visita",
             "i": "ri-list-check-3",
