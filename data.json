@@ -230,14 +230,6 @@
         "col": "zg",
         "tiles": [
           {
-            "leu": "Bilera deia",
-            "les": "Convocatoria reunión",
-            "i": "ri-calendar-event-fill",
-            "t": "web",
-            "ceu": "https://drive.google.com/file/d/1Ti5CIG-wMlC16ad70Yp3VEir5nXx6yfO/view?usp=drive_link",
-            "ces": "https://drive.google.com/file/d/1Ti5CIG-wMlC16ad70Yp3VEir5nXx6yfO/view?usp=drive_link"
-          },
-          {
             "leu": "Ebaluazio protokoloa",
             "les": "Protocolo evaluación",
             "i": "ri-file-list-3-fill",
@@ -258,8 +250,8 @@
             "les": "Agenda de la visita",
             "i": "ri-list-check-3",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1Ti5CIG-wMlC16ad70Yp3VEir5nXx6yfO/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1Ti5CIG-wMlC16ad70Yp3VEir5nXx6yfO/view?usp=drive_link"
           }
         ]
       },
