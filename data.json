@@ -253,36 +253,132 @@
         "col": "zb",
         "tiles": [
           {
-            "leu": "Ikastetxearen aurkezpena",
-            "les": "Presentación del centro",
+            "leu": "1. Bilakaera nagusiak",
+            "les": "1. Principales cambios",
             "i": "ri-slideshow-fill",
             "t": "web",
             "ceu": "",
             "ces": ""
           },
           {
-            "leu": "Kudeaketa memoria",
-            "les": "Memoria de gestión",
+            "leu": "2. Organigrama, prozesu mapa, talde lanak...",
+            "les": "2. Organigrama, mapas de proceso, equipos fortalecidos...",
             "i": "ri-article-fill",
             "t": "pdf",
             "ceu": "",
             "ces": ""
           },
           {
-            "leu": "Prozesuen mapa",
-            "les": "Mapa de procesos",
+            "leu": "3. Titularidadearen EP eta gure ikastetxearekin lotura",
+            "les": "3. PE Titularidad y conexión con el centro",
             "i": "ri-mind-map",
             "t": "web",
             "ceu": "",
             "ces": ""
           },
           {
-            "leu": "Plan estrategikoa 2024-28",
-            "les": "Plan estratégico 2024-28",
+            "leu": "4. ET eta beste zentruekin erlazioa",
+            "les": "4. ET y relación con otros centros",
             "i": "ri-focus-3-fill",
             "t": "web",
             "ceu": "",
             "ces": ""
+          },
+          {
+            "leu": "5. Ekonomi sarbideak",
+            "les": "5. Fuentes de financiación",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "6. Aurrekontuen sistematika",
+            "les": "6. Sistemática presupuestaria",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "7. Adiierazleak aurkezteko irizpideak",
+            "les": "7. Criterios de indicadores presentados",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "8. Kudeapp aurkezpena",
+            "les": "8. Presentación de Kudeapp",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "9. Estrategi planaren egituraketa aldaketa",
+            "les": "9. Cambio del enfoque PE",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "10. Prozesu desberdinen arteko interakzioa",
+            "les": "10. Interacción entre procesos",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "11. Estrategiaren komunikazioa",
+            "les": "11. Comunicación de la Estrategia",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "12. Estrategiaren jarraipena eta berrikustea",
+            "les": "12. Revisión y seguimiento de la Estrategia",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "13. CMI",
+            "les": "13. CMI",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "13. Adierazleen helburuak markatzeko irizpideak",
+            "les": "13. Criterios de establecimiento de criterios",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "14. Aliatuen, laguntzaileen, hornitzaileen... definizioa",
+            "les": "14. Definición de aliados, colaboradores, proveedores...",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "",
+            "ces": ""
+          },
+          {
+            "leu": "15. Bezeroak elementuaren hobekuntza arloak",
+            "les": "15. Áreas de mejora del elemento Clientes",
+            "i": "ri-file-fill",
+            "t": "web",
+            "ceu": "https://docs.google.com/document/d/1JDvh2u-3gyxe7QuVCnaWlviqZ0k7RShZ3IFjQ3Xxi54/edit?usp=sharing",
+            "ces": "https://docs.google.com/document/d/1JDvh2u-3gyxe7QuVCnaWlviqZ0k7RShZ3IFjQ3Xxi54/edit?usp=sharing"
           }
         ]
       }
