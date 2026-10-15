@@ -287,7 +287,7 @@
           {
             "leu": "5. Ekonomi sarbideak",
             "les": "5. Fuentes de financiación",
-            "i": "ri-file-fill",
+            "i": "ri-pie-chart-fill",
             "t": "web",
             "ceu": "",
             "ces": ""
@@ -295,10 +295,10 @@
           {
             "leu": "6. Aurrekontuen sistematika",
             "les": "6. Sistemática presupuestaria",
-            "i": "ri-file-fill",
+            "i": "ri-pie-chart-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "google.es",
+            "ces": "google.es"
           },
           {
             "leu": "7. Adiierazleak aurkezteko irizpideak",
