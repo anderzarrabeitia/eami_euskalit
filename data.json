@@ -255,7 +255,7 @@
           {
             "leu": "1. Bilakaera nagusiak",
             "les": "1. Principales cambios",
-            "i": "ri-slideshow-fill",
+            "i": "ri-focus-3-fill",
             "t": "web",
             "ceu": "https://drive.google.com/file/d/115XLzWUiz-6Uby7IHaZ_-0naaQrb7Fyz/view?usp=drive_link",
             "ces": "https://drive.google.com/file/d/115XLzWUiz-6Uby7IHaZ_-0naaQrb7Fyz/view?usp=drive_link"
@@ -311,7 +311,7 @@
           {
             "leu": "8. Kudeapp aurkezpena",
             "les": "8. Presentación de Kudeapp",
-            "i": "ri-award-fill",
+            "i": "ri-heart-fill",
             "t": "web",
             "ceu": "https://drive.google.com/file/d/1YN_qQZDC_0j-lqdnHfH8GVDsuirWjdhc/view?usp=drive_link",
             "ces": "https://drive.google.com/file/d/1YN_qQZDC_0j-lqdnHfH8GVDsuirWjdhc/view?usp=drive_link"
@@ -413,8 +413,8 @@
             "ces": ""
           },
           {
-            "leu": "BIDEOAK",
-            "les": "Videos",
+            "leu": "0. BIDEOAK",
+            "les": "0. Videos",
             "i": "ri-camera-fill",
             "t": "web",
             "ceu": "https://docs.google.com/presentation/d/1fupTwN2jMDzrxbtVZ1VHhD6VfMr20XxSuAEUn8fqlNA/edit?usp=drive_link",
