@@ -313,8 +313,8 @@
             "les": "8. Presentación de Kudeapp",
             "i": "ri-file-fill",
             "t": "web",
-            "ceu": "https://drive.google.com/file/d/1IenmmOEZm1BgpciWcfbny1mjwoqzNp8q/view?usp=drive_link",
-            "ces": "https://drive.google.com/file/d/1IenmmOEZm1BgpciWcfbny1mjwoqzNp8q/view?usp=drive_link"
+            "ceu": "https://drive.google.com/file/d/1YN_qQZDC_0j-lqdnHfH8GVDsuirWjdhc/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1YN_qQZDC_0j-lqdnHfH8GVDsuirWjdhc/view?usp=drive_link"
           },
           {
             "leu": "9. Estrategi planaren egituraketa aldaketa",
@@ -411,6 +411,14 @@
             "t": "web",
             "ceu": "",
             "ces": ""
+          },
+          {
+            "leu": "BIDEOAK",
+            "les": "Videos",
+            "i": "ri-camera-fill",
+            "t": "web",
+            "ceu": "https://docs.google.com/presentation/d/1fupTwN2jMDzrxbtVZ1VHhD6VfMr20XxSuAEUn8fqlNA/edit?usp=drive_link",
+            "ces": "https://docs.google.com/presentation/d/1fupTwN2jMDzrxbtVZ1VHhD6VfMr20XxSuAEUn8fqlNA/edit?usp=drive_link"
           }
         ]
       }
