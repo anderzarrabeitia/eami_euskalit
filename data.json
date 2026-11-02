@@ -435,33 +435,25 @@
             "leu": "Eguneko programa",
             "les": "Programa del día",
             "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1BuRmK2pLxS90KBtRzTAy3AkbJYBEvPer/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1BuRmK2pLxS90KBtRzTAy3AkbJYBEvPer/view?usp=drive_link"
           },
           {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
+            "leu": "Estrategia aurkezpena",
+            "les": "Presentación de Estrategia",
+            "i": "ri-file-text-fill",
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/1Mw_lEei5v2wESD2sW0IaWCV5YrXYKsWU/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1Mw_lEei5v2wESD2sW0IaWCV5YrXYKsWU/view?usp=drive_link"
+          },
+          {
+            "leu": "Gizartearen aurkezpena",
+            "les": "Presentación de Sociedad",
             "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/1Pmpi-pxCzc1BqnXfEGTyP2L8RJkD8ZzE/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1Pmpi-pxCzc1BqnXfEGTyP2L8RJkD8ZzE/view?usp=drive_link"
           }
         ]
       },
@@ -474,33 +466,9 @@
             "leu": "Eguneko programa",
             "les": "Programa del día",
             "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
-            "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://drive.google.com/file/d/1HjRsfOx-5wFvsrQJ59vEci87f6_LOaDS/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1HjRsfOx-5wFvsrQJ59vEci87f6_LOaDS/view?usp=drive_link"
           }
         ]
       },
