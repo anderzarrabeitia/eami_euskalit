@@ -469,6 +469,22 @@
             "t": "web",
             "ceu": "https://drive.google.com/file/d/1gN1iKEBxtAPFvXh9LcQRDOF164VKPSvu/view?usp=drive_link",
             "ces": "https://drive.google.com/file/d/1gN1iKEBxtAPFvXh9LcQRDOF164VKPSvu/view?usp=drive_link"
+          },
+          {
+            "leu": "Bezeroak aurkezpena",
+            "les": "Presentación Clientes",
+            "i": "ri-heart-fill",
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/10Juf24Ik9889po52dT--42Z-77SMsaWi/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/10Juf24Ik9889po52dT--42Z-77SMsaWi/view?usp=drive_link"
+          },
+          {
+            "leu": "Pertsonak aurkezpena",
+            "les": "Presentación Personas",
+            "i": "ri-user-star-fill",
+            "t": "web",
+            "ceu": "https://drive.google.com/file/d/1AE5l8Vs02XuRhF5IfdtHvo0GIfgB6rG1/view?usp=drive_link",
+            "ces": "https://drive.google.com/file/d/1AE5l8Vs02XuRhF5IfdtHvo0GIfgB6rG1/view?usp=drive_link"
           }
         ]
       },
@@ -481,33 +497,9 @@
             "leu": "Eguneko programa",
             "les": "Programa del día",
             "i": "ri-list-check-3",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Aurreikusitako elkarrizketak",
-            "les": "Entrevistas previstas",
-            "i": "ri-group-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Laguntza dokumentuak",
-            "les": "Documentos de apoyo",
-            "i": "ri-files-fill",
             "t": "web",
-            "ceu": "",
-            "ces": ""
-          },
-          {
-            "leu": "Saioaren oharrak",
-            "les": "Notas de sesión",
-            "i": "ri-draft-fill",
-            "t": "txt",
-            "ceu": "",
-            "ces": ""
+            "ceu": "https://docs.google.com/document/d/1Xata9hT-3_NBHoSUrGP-8-r3y-XzNR_VrKCNznS0HEQ/edit?usp=drive_link",
+            "ces": "https://docs.google.com/document/d/1Xata9hT-3_NBHoSUrGP-8-r3y-XzNR_VrKCNznS0HEQ/edit?usp=drive_link"
           }
         ]
       }
